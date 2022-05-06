@@ -16,7 +16,7 @@ export const NavBar = () => {
     <div className={styles.NavBar}>
       <a href="/">
         <div className={styles.Logo}>
-          <img src={virklund}></img>
+          <img src={virklund} height={40} />
           <Spacer size={10} />
           <span>Anna Virklund</span>
         </div>

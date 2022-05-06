@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import styles from "./App.module.scss";
+import { Footer } from "./components/Footer/Footer";
 import { Intro } from "./components/Intro/Intro";
 import { NavBar } from "./components/NavBar/NavBar";
 
@@ -19,7 +20,7 @@ function App() {
           </Routes>
         </div>
       </div>
-      <div className={styles.Footer}></div>
+      <Footer />
     </div>
   );
 }

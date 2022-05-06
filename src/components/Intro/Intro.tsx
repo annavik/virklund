@@ -1,7 +1,7 @@
-import { Spacer } from "../Spacer/Spacer";
-import styles from "./Intro.module.scss";
-import crochetHook from "./crochet-hook.png";
 import { Button } from "../Button/Button";
+import { Spacer } from "../Spacer/Spacer";
+import crochetHook from "./crochet-hook.png";
+import styles from "./Intro.module.scss";
 
 export const Intro = () => {
   return (

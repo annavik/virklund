@@ -1,5 +1,6 @@
 // Color tokens
 $color-black: #333333;
+$color-grey-dark: #828282;
 $color-white: #ffffff;
 $color-green-dark: #64a268;
 $color-green-medium: #86c481;
@@ -27,6 +28,13 @@ $color-blue-light: #bad0f7;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+@mixin text-small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 @mixin button-label {
