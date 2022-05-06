@@ -3,6 +3,9 @@ $color-black: #333333;
 $color-white: #ffffff;
 $color-green-dark: #64a268;
 $color-green-medium: #86c481;
+$color-blue-dark: #7a9dea;
+$color-blue-medium: #96b6f3;
+$color-blue-light: #bad0f7;
 
 // Text styles
 @mixin title-large {
@@ -12,11 +15,18 @@ $color-green-medium: #86c481;
   line-height: 72px;
 }
 
-@mixin text-large {
+@mixin text-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+@mixin text-large {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @mixin button-label {
@@ -24,4 +34,13 @@ $color-green-medium: #86c481;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+@mixin label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }

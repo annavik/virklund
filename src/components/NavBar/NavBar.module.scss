@@ -1,0 +1,63 @@
+@import "../../base.scss";
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1024px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  span {
+    @include label();
+  }
+}
+
+.NavItems {
+  display: flex;
+
+  > :not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.NavItem {
+  padding: 0 10px;
+  position: relative;
+
+  span {
+    @include text-large();
+  }
+}
+
+.NavItemMarker {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  transform: translateY(100%);
+  background-color: transparent;
+  pointer-events: none;
+
+  &.Active {
+    background-color: $color-blue-medium;
+  }
+}
+
+.NavItem:hover .NavItemMarker:not(.Active) {
+  background-color: $color-blue-light;
+}
