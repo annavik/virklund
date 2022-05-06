@@ -1,0 +1,27 @@
+// Color tokens
+$color-black: #333333;
+$color-white: #ffffff;
+$color-green-dark: #64a268;
+$color-green-medium: #86c481;
+
+// Text styles
+@mixin title-large {
+  font-family: "Giddyup", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+@mixin text-large {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin button-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

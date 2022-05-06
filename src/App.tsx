@@ -1,11 +1,16 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import styles from "./App.module.scss";
+import { Intro } from "./components/Intro/Intro";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Lorem ipsum!</h1>
+    <div className={styles.App}>
+      <div className={styles.Menu}></div>
+      <div className={styles.ContentContainer}>
+        <div className={styles.Content}>
+          <Intro />
+        </div>
+      </div>
+      <div className={styles.Footer}></div>
     </div>
   );
 }

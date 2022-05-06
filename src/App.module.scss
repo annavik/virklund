@@ -1,0 +1,29 @@
+@import "./base.scss";
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu {
+  height: 64px;
+}
+
+.ContentContainer {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.Content {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Footer {
+  height: 120px;
+  background-color: $color-white;
+}

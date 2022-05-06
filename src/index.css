@@ -3,10 +3,24 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+      180deg,
+      rgba(186, 208, 247, 0) 0%,
+      rgba(186, 208, 247, 0.25) 100%
+    ),
+    #ffffff;
+  color: #333333;
 }
 
 @font-face {
   font-family: "Giddyup";
   font-weight: 400;
   src: url("/public/assets/fonts/GiddyupStd.otf");
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
