@@ -3,7 +3,7 @@ import image from "./laptop.jpg";
 
 export const laptop: Pattern = {
   id: "laptop",
-  title: "Laptop",
+  title: "Laptopfodral",
   image: {
     src: image,
     objectPosition: "center left",
