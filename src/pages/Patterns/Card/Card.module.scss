@@ -1,0 +1,59 @@
+@import "../../../base.scss";
+
+.Card {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  background-color: $color-white;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.Image {
+  width: 200px;
+  height: 200px;
+  background-color: $color-blue-transparent;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Content {
+  padding: 20px;
+  position: relative;
+
+  h2 {
+    @include title-large();
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  p {
+    @include text-medium();
+  }
+}
+
+.Date {
+  @include text-small();
+  color: $color-grey-dark;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.Tags {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+}
+
+.Tag {
+  @include text-small();
+  color: $color-white;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: $color-blue-medium;
+  margin-right: 10px;
+}
