@@ -3,6 +3,7 @@ import styles from "./App.module.scss";
 import { Footer } from "./components/Footer/Footer";
 import { Intro } from "./components/Intro/Intro";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Virkskolan } from "./pages/Virkskolan/Virkskolan";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Intro />} />
             <Route path="/monster" element={<></>} />
-            <Route path="/virkskolan" element={<></>} />
+            <Route path="/virkskolan" element={<Virkskolan />} />
             <Route path="/kontakt" element={<></>} />
           </Routes>
         </div>

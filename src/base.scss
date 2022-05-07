@@ -1,19 +1,44 @@
 // Color tokens
 $color-black: #333333;
 $color-grey-dark: #828282;
+$color-grey-medium: #e0e0e0;
+$color-grey-light: #f2f2f2;
 $color-white: #ffffff;
 $color-green-dark: #64a268;
 $color-green-medium: #86c481;
 $color-blue-dark: #7a9dea;
 $color-blue-medium: #96b6f3;
 $color-blue-light: #bad0f7;
+$color-blue-transparent: rgba(186, 208, 247, 0.25);
 
-// Text styles
+// Title styles
 @mixin title-large {
   font-family: "Giddyup", sans-serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 72px;
+}
+
+@mixin title-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin title-small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// Text styles
+@mixin text-large {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @mixin text-medium {
@@ -23,13 +48,6 @@ $color-blue-light: #bad0f7;
   line-height: 21px;
 }
 
-@mixin text-large {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 @mixin text-small {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -37,13 +55,7 @@ $color-blue-light: #bad0f7;
   line-height: 18px;
 }
 
-@mixin button-label {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-
+// Label styles
 @mixin label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -51,4 +63,11 @@ $color-blue-light: #bad0f7;
   line-height: 19px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+@mixin button-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }

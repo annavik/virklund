@@ -15,10 +15,6 @@
   display: flex;
   align-items: center;
 
-  img {
-    border-radius: 50%;
-  }
-
   span {
     @include label();
   }
@@ -37,26 +33,28 @@
   position: relative;
 
   span {
-    @include text-large();
+    @include label();
   }
-}
 
-.NavItemMarker {
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  transform: translateY(100%);
-  background-color: transparent;
-  pointer-events: none;
+  .NavItemMarker {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: translateY(100%);
+    background-color: transparent;
+    pointer-events: none;
 
-  &.Active {
-    background-color: $color-blue-medium;
+    &.Active {
+      background-color: $color-blue-medium;
+    }
   }
-}
 
-.NavItem:hover .NavItemMarker:not(.Active) {
-  background-color: $color-blue-light;
+  &:hover {
+    .NavItemMarker:not(.Active) {
+      background-color: $color-blue-light;
+    }
+  }
 }
