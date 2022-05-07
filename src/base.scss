@@ -6,10 +6,15 @@ $color-grey-light: #f2f2f2;
 $color-white: #ffffff;
 $color-green-dark: #64a268;
 $color-green-medium: #86c481;
+$color-green-light: #b1dda3;
 $color-blue-dark: #7a9dea;
 $color-blue-medium: #96b6f3;
 $color-blue-light: #bad0f7;
 $color-blue-transparent: rgba(186, 208, 247, 0.25);
+$color-blue-ultra-transparent: rgba(186, 208, 247, 0.15);
+
+// Shadow tokens
+$shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 
 // Title styles
 @mixin title-large {
