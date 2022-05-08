@@ -16,6 +16,10 @@ $color-blue-ultra-transparent: rgba(186, 208, 247, 0.15);
 // Shadow tokens
 $shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 
+// Sixe tokens
+$page-width: 1024px;
+$content-width: 720px;
+
 // Title styles
 @mixin title-large {
   font-family: "Giddyup", sans-serif;
@@ -39,13 +43,6 @@ $shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 // Text styles
-@mixin text-large {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 @mixin text-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 400;

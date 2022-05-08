@@ -9,7 +9,7 @@ import { Virkskolan } from "./pages/Virkskolan/Virkskolan";
 function App() {
   return (
     <div className={styles.App}>
-      <div className={styles.Menu}>
+      <div className={styles.NavBarContainer}>
         <NavBar />
       </div>
       <div className={styles.ContentContainer}>
@@ -21,8 +21,10 @@ function App() {
             <Route path="/kontakt" element={<></>} />
           </Routes>
         </div>
+        <div className={styles.FooterContainer}>
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </div>
   );
 }

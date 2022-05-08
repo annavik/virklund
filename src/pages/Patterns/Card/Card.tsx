@@ -1,6 +1,6 @@
 import { Spacer } from "../../../components/Spacer/Spacer";
-import { tagToString } from "../data/patterns";
-import { Pattern } from "../data/types";
+import { tagToString } from "../../../patterns/patterns";
+import { Pattern } from "../../../patterns/types";
 import styles from "./Card.module.scss";
 
 export const Card = ({ pattern }: { pattern: Pattern }) => {

@@ -4,9 +4,9 @@ import { Dropdown } from "../../components/Dropdown/Dropdown";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
 import { TextInput } from "../../components/TextInput/TextInput";
+import { patterns } from "../../patterns/patterns";
+import { Pattern, Tag } from "../../patterns/types";
 import { Card } from "./Card/Card";
-import { patterns } from "./data/patterns";
-import { Pattern, Tag } from "./data/types";
 import styles from "./Patterns.module.scss";
 
 const filterTypes = [

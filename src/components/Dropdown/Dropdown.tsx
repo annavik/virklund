@@ -45,6 +45,7 @@ export const Dropdown = ({
           onClick={() => !disabled && setIsOpen(!isOpen)}
         >
           <span>{selectedItem?.label}</span>
+          <div className={styles.Arrow} />
         </div>
         {isOpen && (
           <div className={styles.Items}>
