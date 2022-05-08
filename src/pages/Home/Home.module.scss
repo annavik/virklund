@@ -1,0 +1,12 @@
+@import "../../base.scss";
+
+.Container {
+  width: $content-width;
+  margin: 0 auto;
+}
+
+.LatestPatterns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

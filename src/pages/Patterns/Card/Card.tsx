@@ -1,5 +1,5 @@
 import { Spacer } from "../../../components/Spacer/Spacer";
-import { tagToString } from "../../../patterns/patterns";
+import { patternTagToString } from "../../../patterns/patterns";
 import { Pattern } from "../../../patterns/types";
 import styles from "./Card.module.scss";
 
@@ -21,7 +21,7 @@ export const Card = ({ pattern }: { pattern: Pattern }) => {
         <div className={styles.Tags}>
           {pattern.tags.map((tag) => (
             <div key={tag} className={styles.Tag}>
-              {tagToString(tag)}
+              {patternTagToString(tag)}
             </div>
           ))}
         </div>

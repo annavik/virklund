@@ -1,6 +1,6 @@
-import styles from "./Virklund.module.scss";
 import virklund from "./virklund.jpg";
+import styles from "./Virklund.module.scss";
 
 export const Virklund = ({ size }: { size: number }) => {
-  return <img src={virklund} className={styles.Virklund} height={size} />;
+  return <img className={styles.Virklund} src={virklund} height={size} />;
 };

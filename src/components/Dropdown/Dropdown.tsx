@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { useEffect, useRef, useState } from "react";
+import arrow from "./arrow-down-black.png";
 import styles from "./Dropdown.module.scss";
 
 export const Dropdown = ({
@@ -45,7 +46,7 @@ export const Dropdown = ({
           onClick={() => !disabled && setIsOpen(!isOpen)}
         >
           <span>{selectedItem?.label}</span>
-          <div className={styles.Arrow} />
+          <img className={styles.Arrow} src={arrow} width={16} height={16} />
         </div>
         {isOpen && (
           <div className={styles.Items}>

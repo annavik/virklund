@@ -19,7 +19,7 @@ export const Footer = () => {
             <img src={youtube} height={20} />
           </a>
         </div>
-        <img src={yarn} className={styles.Yarn} height={40}></img>
+        <img className={styles.Yarn} src={yarn} height={40}></img>
       </div>
     </div>
   );

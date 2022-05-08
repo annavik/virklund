@@ -27,7 +27,7 @@
     outline: $color-green-light solid 1px;
 
     .Arrow {
-      transform: rotate(0);
+      transform: rotate(-180deg);
     }
   }
 
@@ -37,12 +37,6 @@
   }
 
   .Arrow {
-    box-sizing: border-box;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-bottom-color: $color-grey-medium;
-    transform: rotate(180deg);
     transition: transform 250ms ease-in-out;
   }
 }

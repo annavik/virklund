@@ -1,12 +1,14 @@
-import { Button } from "../Button/Button";
-import { Spacer } from "../Spacer/Spacer";
+import { useNavigate } from "react-router";
+import { Button } from "../../../components/Button/Button";
+import { Spacer } from "../../../components/Spacer/Spacer";
 import crochetHook from "./crochet-hook.png";
 import styles from "./Intro.module.scss";
 
 export const Intro = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.Intro}>
-      <Spacer size={80} />
       <div className={styles.Content}>
         <h1 className={styles.Title}>Lorem ipsum!</h1>
         <p className={styles.Text}>
@@ -18,7 +20,7 @@ export const Intro = () => {
         <img className={styles.Image} src={crochetHook} />
       </div>
       <Spacer size={50} />
-      <Button label="Lorem ipsum" onClick={() => {}} />
+      <Button label="Lorem ipsum" onClick={() => navigate("/monster")} />
     </div>
   );
 };

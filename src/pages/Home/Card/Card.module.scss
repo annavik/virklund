@@ -1,0 +1,31 @@
+@import "../../../base.scss";
+
+.Card {
+  width: 200px;
+  border-radius: 6px;
+  background-color: $color-white;
+  box-shadow: $shadow;
+  overflow: hidden;
+}
+
+.Image {
+  width: 200px;
+  height: 150px;
+  background-color: $color-blue-transparent;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Content {
+  padding: 10px 20px 20px;
+
+  h2 {
+    @include title-small();
+  }
+}
+
+.Date {
+  @include text-small();
+  color: $color-grey-dark;
+  font-style: italic;
+}

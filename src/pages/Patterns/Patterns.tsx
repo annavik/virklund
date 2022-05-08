@@ -4,7 +4,11 @@ import { Dropdown } from "../../components/Dropdown/Dropdown";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
 import { TextInput } from "../../components/TextInput/TextInput";
-import { patterns } from "../../patterns/patterns";
+import {
+  patterns,
+  sortPatternsByDate,
+  sortPatternsByName,
+} from "../../patterns/patterns";
 import { Pattern, Tag } from "../../patterns/types";
 import { Card } from "./Card/Card";
 import styles from "./Patterns.module.scss";
@@ -61,16 +65,14 @@ export const Patterns = () => {
       }
     });
 
-    _patternList = _patternList.sort((a, b) => {
-      switch (sortType) {
-        case "sort-date":
-          return a.date < b.date ? 1 : -1;
-        case "sort-name":
-          return a.title > b.title ? 1 : -1;
-        default:
-          return 0;
-      }
-    });
+    switch (sortType) {
+      case "sort-date":
+        _patternList = sortPatternsByDate(_patternList);
+        break;
+      case "sort-name":
+        _patternList = sortPatternsByName(_patternList);
+        break;
+    }
 
     setPatternList(_patternList);
   }, [searchString, sortType, filterType]);
