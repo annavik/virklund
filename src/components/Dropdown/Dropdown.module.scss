@@ -4,10 +4,6 @@
   @include text-medium();
   position: relative;
   user-select: none;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .SelectedItem {
@@ -22,9 +18,18 @@
   border-radius: 8px;
   border: 1px solid $color-grey-medium;
 
+  &:hover:not(.Disabled) {
+    cursor: pointer;
+  }
+
   &.Active {
     border-color: $color-green-medium;
     outline: $color-green-light solid 1px;
+  }
+
+  &.Disabled {
+    background-color: $color-grey-light;
+    color: $color-grey-dark;
   }
 }
 

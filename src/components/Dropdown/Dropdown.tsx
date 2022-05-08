@@ -4,11 +4,13 @@ import styles from "./Dropdown.module.scss";
 
 export const Dropdown = ({
   label,
+  disabled,
   items,
   selected,
   onSelect,
 }: {
   label?: string;
+  disabled?: boolean;
   items: { id: string; label: string }[];
   selected: string;
   onSelect: (selected: string) => void;
@@ -38,8 +40,9 @@ export const Dropdown = ({
         <div
           className={classNames(styles.SelectedItem, {
             [styles.Active]: isOpen,
+            [styles.Disabled]: disabled,
           })}
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => !disabled && setIsOpen(!isOpen)}
         >
           <span>{selectedItem?.label}</span>
         </div>
