@@ -16,7 +16,7 @@ export const SectionTitle = ({
         {action && (
           <div role="button" className={styles.Action} onClick={action.onClick}>
             <span>{action.label}</span>
-            <Spacer size={8} />
+            <Spacer size={10} />
             <div className={styles.ArrowContainer}>
               <img src={arrow} width={16} height={16} />
             </div>

@@ -110,10 +110,10 @@ export const Patterns = () => {
         </div>
       </div>
       <Spacer size={40} />
-      {patternList.map((pattern) => (
+      {patternList.map((pattern, index) => (
         <React.Fragment key={pattern.id}>
           <Card pattern={pattern} />
-          <Spacer size={30} />
+          {index < patternList.length - 1 && <Spacer size={30} />}
         </React.Fragment>
       ))}
       <Spacer size={80} />

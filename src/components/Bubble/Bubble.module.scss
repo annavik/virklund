@@ -1,18 +1,31 @@
 @import "../../base.scss";
 
 .Bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 40px;
   border-radius: 12px;
   background-color: $color-blue-transparent;
-  text-align: center;
+  box-sizing: border-box;
   position: relative;
-
-  span {
-    @include text-medium();
-  }
 
   h3 {
     @include title-small();
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    @include text-medium();
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  a {
+    font-weight: 500;
   }
 }
 

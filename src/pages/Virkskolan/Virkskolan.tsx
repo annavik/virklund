@@ -17,9 +17,12 @@ export const Virkskolan = () => {
       <div className={styles.Intro}>
         <div className={styles.BubbleContainer}>
           <Bubble
-            title="Välkommen till Virkskolan!"
-            text="Virkskolan är en serie korta videor där jag visar lite grunder och kommer med tips."
+            html={[
+              "<h3>Välkommen till Virkskolan! 💡</h3>",
+              "<p>Virkskolan är en serie korta videor där fokus ligger på grundläggande tekniker och tips och trix.</p>",
+            ].join("")}
             position="left"
+            style={{ textAlign: "center" }}
           />
         </div>
         <Spacer size={60} />

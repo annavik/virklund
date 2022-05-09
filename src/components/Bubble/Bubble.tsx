@@ -1,21 +1,19 @@
 import classNames from "classnames";
-import { Spacer } from "../Spacer/Spacer";
+import React from "react";
 import styles from "./Bubble.module.scss";
 
 export const Bubble = ({
-  title,
-  text,
+  html,
   position = "top",
+  style,
 }: {
-  title: string;
-  text: string;
+  html: string;
   position?: "top" | "bottom" | "left" | "right";
+  style?: React.CSSProperties;
 }) => {
   return (
-    <div className={styles.Bubble}>
-      <h3>{title}</h3>
-      <Spacer size={10} />
-      <span>{text}</span>
+    <div className={styles.Bubble} style={style}>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <div
         className={classNames(styles.Arrow, {
           [styles.Top]: position === "top",

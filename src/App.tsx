@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Footer } from "./components/Footer/Footer";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Contact } from "./pages/Contact/Contact";
 import { Home } from "./pages/Home/Home";
 import { Patterns } from "./pages/Patterns/Patterns";
 import { Virkskolan } from "./pages/Virkskolan/Virkskolan";
@@ -18,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/monster" element={<Patterns />} />
             <Route path="/virkskolan" element={<Virkskolan />} />
-            <Route path="/kontakt" element={<></>} />
+            <Route path="/kontakt" element={<Contact />} />
           </Routes>
         </div>
         <div className={styles.FooterContainer}>
