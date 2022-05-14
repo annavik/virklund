@@ -20,7 +20,7 @@ export const Intro = () => {
         <img className={styles.Image} src={crochetHook} />
       </div>
       <Spacer size={50} />
-      <Button label="Lorem ipsum" onClick={() => navigate("/monster")} />
+      <Button label="Lorem ipsum" onClick={() => navigate("/patterns")} />
     </div>
   );
 };

@@ -9,8 +9,9 @@ export const laptop: Pattern = {
     objectPosition: "center left",
   },
   date: new Date("2017-07-31"),
-  tags: [Tag.PDF, Tag.Video, Tag.Print],
+  tags: [Tag.PDF, Tag.Print, Tag.Video],
+  links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  video: "https://www.youtube.com/watch?v=sIDy0hhB_uo",
+    "Klart att datorn måste få sig ett fodral så att den inte skadas i väskan! I det här mönstret virkar vi ett fodral till en laptop i 13-tumsstorlek, men det går bra att anpassa storleken på fodralet.",
+  video: "https://www.youtube.com/embed/sIDy0hhB_uo",
 };

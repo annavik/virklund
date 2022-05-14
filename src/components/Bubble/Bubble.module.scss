@@ -10,17 +10,19 @@
   box-sizing: border-box;
   position: relative;
 
+  h2 {
+    @include title-medium();
+  }
+
   h3 {
     @include title-small();
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
   }
 
   p {
     @include text-medium();
-    &:not(:last-child) {
-      margin-bottom: 15px;
+
+    strong {
+      font-weight: 500;
     }
   }
 

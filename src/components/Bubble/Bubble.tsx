@@ -3,17 +3,17 @@ import React from "react";
 import styles from "./Bubble.module.scss";
 
 export const Bubble = ({
-  html,
   position = "top",
   style,
+  children,
 }: {
-  html: string;
   position?: "top" | "bottom" | "left" | "right";
   style?: React.CSSProperties;
+  children: React.ReactNode;
 }) => {
   return (
     <div className={styles.Bubble} style={style}>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div>{children}</div>
       <div
         className={classNames(styles.Arrow, {
           [styles.Top]: position === "top",

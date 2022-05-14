@@ -1,0 +1,44 @@
+@import "../../base.scss";
+
+.ArrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    @include text-medium();
+    font-weight: 500;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .ArrowContainer {
+      background-color: $color-green-dark;
+    }
+  }
+
+  .ArrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: $color-green-medium;
+    border-radius: 50%;
+  }
+}
+
+.ArrowButton.Plain {
+  .ArrowContainer {
+    background-color: transparent;
+  }
+}
+
+.ArrowButton.Reverse {
+  flex-direction: row-reverse;
+
+  .ArrowContainer {
+    transform: rotate(180deg);
+  }
+}

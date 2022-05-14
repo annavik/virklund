@@ -1,26 +1,28 @@
+import { ArrowButton } from "../ArrowButton/ArrowButton";
 import { Spacer } from "../Spacer/Spacer";
-import arrow from "./arrow-right-white.png";
 import styles from "./SectionTitle.module.scss";
 
 export const SectionTitle = ({
   title,
-  action,
+  subTitle,
+  rightAccessory,
 }: {
   title: string;
-  action?: { label: string; onClick: () => void };
+  subTitle?: string;
+  rightAccessory?: { label: string; onClick: () => void };
 }) => {
   return (
     <>
       <div className={styles.Content}>
-        <h1 className={styles.Title}>{title}</h1>
-        {action && (
-          <div role="button" className={styles.Action} onClick={action.onClick}>
-            <span>{action.label}</span>
-            <Spacer size={10} />
-            <div className={styles.ArrowContainer}>
-              <img src={arrow} width={16} height={16} />
-            </div>
-          </div>
+        <div>
+          <h1 className={styles.Title}>{title}</h1>
+          {subTitle && <span className={styles.SubTitle}>{subTitle}</span>}
+        </div>
+        {rightAccessory && (
+          <ArrowButton
+            label={rightAccessory.label}
+            onClick={rightAccessory.onClick}
+          />
         )}
       </div>
       <Spacer size={4} />

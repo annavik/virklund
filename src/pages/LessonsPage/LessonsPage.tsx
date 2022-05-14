@@ -1,14 +1,15 @@
 import classNames from "classnames";
 import { useState } from "react";
 import { Bubble } from "../../components/Bubble/Bubble";
+import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
+import { VideoPlayer } from "../../components/VideoPlayer/VideoPlayer";
 import { Virklund } from "../../components/Virklund/Virklund";
 import { lessons } from "./lessons";
-import styles from "./Virkskolan.module.scss";
+import styles from "./LessonsPage.module.scss";
 import stitchMarker from "./stitch-marker.png";
-import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 
-export const Virkskolan = () => {
+export const LessonsPage = () => {
   const [activeLesson, setActiveLesson] = useState(lessons[0]);
 
   return (
@@ -16,29 +17,21 @@ export const Virkskolan = () => {
       <Spacer size={80} />
       <div className={styles.Intro}>
         <div className={styles.BubbleContainer}>
-          <Bubble
-            html={[
-              "<h3>Välkommen till Virkskolan! 💡</h3>",
-              "<p>Virkskolan är en serie korta videor där fokus ligger på grundläggande tekniker och tips och trix.</p>",
-            ].join("")}
-            position="left"
-            style={{ textAlign: "center" }}
-          />
+          <Bubble position="left" style={{ textAlign: "center" }}>
+            <h3>Välkommen till Virkskolan! 💡</h3>
+            <Spacer size={10} />
+            <p>
+              Virkskolan är en serie korta videor där fokus ligger på
+              grundläggande tekniker och tips och trix.
+            </p>
+          </Bubble>
         </div>
         <Spacer size={60} />
         <Virklund size={120} />
       </div>
       <Spacer size={80} />
       <div className={styles.Content}>
-        <iframe
-          width="560"
-          height="315"
-          src={activeLesson.src}
-          title={activeLesson.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <VideoPlayer title={activeLesson.title} src={activeLesson.src} />
         <Spacer size={60} />
         <div className={styles.List}>
           <SectionTitle title="Avsnitt" />

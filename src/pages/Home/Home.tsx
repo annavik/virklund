@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
 import { patterns, sortPatternsByDate } from "../../patterns/patterns";
@@ -23,17 +23,17 @@ export const Home = () => {
       <Spacer size={100} />
       <SectionTitle
         title="Senaste mönster"
-        action={{
+        rightAccessory={{
           label: "Visa alla",
-          onClick: () => navigate("/monster"),
+          onClick: () => navigate("/patterns"),
         }}
       />
       <Spacer size={30} />
       <div className={styles.LatestPatterns}>
         {latestPatterns.map((pattern) => (
-          <React.Fragment key={pattern.id}>
+          <Link to={`/patterns/${pattern.id}`} key={pattern.id}>
             <Card pattern={pattern} />
-          </React.Fragment>
+          </Link>
         ))}
       </div>
       <Spacer size={80} />

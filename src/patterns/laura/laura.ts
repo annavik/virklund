@@ -9,8 +9,9 @@ export const laura: Pattern = {
     objectPosition: "center right",
   },
   date: new Date("2017-07-28"),
-  tags: [Tag.PDF, Tag.Video, Tag.Print],
+  tags: [Tag.PDF, Tag.Print, Tag.Video],
+  links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  video: "https://www.youtube.com/watch?v=-1L-asn0WOc",
+    "I det här mönstret virkar vi en mysig mössa inför hösten som jag har döpt till Laura Palmer. Det är en väldigt enkel och snabb mössa att virka!",
+  video: "https://www.youtube.com/embed/afFNpYO8w5w",
 };

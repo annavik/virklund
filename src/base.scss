@@ -43,6 +43,13 @@ $content-width: 720px;
 }
 
 // Text styles
+@mixin text-large {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 @mixin text-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 400;

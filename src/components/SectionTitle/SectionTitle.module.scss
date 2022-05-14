@@ -10,32 +10,10 @@
   @include title-medium();
 }
 
-.Action {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  span {
-    @include text-medium();
-  }
-
-  &:hover {
-    cursor: pointer;
-
-    .ArrowContainer {
-      background-color: $color-blue-dark;
-    }
-  }
-
-  .ArrowContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    background-color: $color-blue-medium;
-    border-radius: 50%;
-  }
+.SubTitle {
+  @include text-small();
+  color: $color-grey-dark;
+  font-style: italic;
 }
 
 .Line {

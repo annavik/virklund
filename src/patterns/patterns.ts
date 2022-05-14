@@ -8,8 +8,16 @@ export const patterns: Pattern[] = [donna, laptop, laura];
 export const patternTagToString = (tag: Tag): string => {
   return {
     [Tag.PDF]: "PDF",
-    [Tag.Video]: "YouTube",
     [Tag.Print]: "Utskrift",
+    [Tag.Video]: "YouTube",
+  }[tag];
+};
+
+export const patternTagToLinkString = (tag: Tag): string => {
+  return {
+    [Tag.PDF]: "Ladda ner mönster",
+    [Tag.Print]: "Ladda ner utskriftsversion",
+    [Tag.Video]: "Till instruktionsvideo",
   }[tag];
 };
 

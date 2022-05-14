@@ -8,8 +8,12 @@ export const donna: Pattern = {
     src: image,
   },
   date: new Date("2017-10-02"),
-  tags: [Tag.PDF, Tag.Video, Tag.Print],
+  tags: [Tag.PDF, Tag.Print, Tag.Video],
+  links: [
+    { type: Tag.PDF, src: "" },
+    { type: Tag.Print, src: "" },
+  ],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  video: "https://www.youtube.com/watch?v=afFNpYO8w5w",
+    "I det här mönstret virkar vi en härlig sjal som är perfekt att värma sig i under hösten. Sjalen har jag döpt till Donna och för en komplett outfit rekommenderar jag såklart att man kombinerar med mössan Laura i en passande färg.",
+  video: "https://www.youtube.com/embed/afFNpYO8w5w",
 };

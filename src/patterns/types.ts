@@ -7,12 +7,16 @@ export interface Pattern {
   };
   date: Date;
   tags: Tag[];
+  links: {
+    type: Tag;
+    src: string;
+  }[];
   description: string;
   video?: string;
 }
 
 export enum Tag {
   PDF,
-  Video,
   Print,
+  Video,
 }

@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Dropdown } from "../../components/Dropdown/Dropdown";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
@@ -11,7 +12,7 @@ import {
 } from "../../patterns/patterns";
 import { Pattern, Tag } from "../../patterns/types";
 import { Card } from "./Card/Card";
-import styles from "./Patterns.module.scss";
+import styles from "./PatternsPage.module.scss";
 
 const filterTypes = [
   { id: "filter-all", label: "Visa alla" },
@@ -25,7 +26,7 @@ const sortTypes = [
   { id: "sort-name", label: "Namn" },
 ];
 
-export const Patterns = () => {
+export const PatternsPage = () => {
   const [patternList, setPatternList] = useState<Pattern[]>([]);
   const [searchString, setSearchString] = useState("");
   const [filterType, setFilterType] = useState(filterTypes[0].id);
@@ -112,7 +113,9 @@ export const Patterns = () => {
       <Spacer size={40} />
       {patternList.map((pattern, index) => (
         <React.Fragment key={pattern.id}>
-          <Card pattern={pattern} />
+          <Link to={`/patterns/${pattern.id}`}>
+            <Card pattern={pattern} />
+          </Link>
           {index < patternList.length - 1 && <Spacer size={30} />}
         </React.Fragment>
       ))}

@@ -1,0 +1,52 @@
+@import "../../base.scss";
+
+.Container {
+  width: $content-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card {
+  border-radius: 12px;
+  background-color: $color-white;
+  box-shadow: $shadow;
+  overflow: hidden;
+}
+
+.Image {
+  display: block;
+  margin: 0 auto;
+  width: $content-width;
+  height: calc($content-width * 9 / 16);
+  object-fit: cover;
+}
+
+.Content {
+  padding: 40px;
+
+  h2 {
+    @include title-small();
+  }
+}
+
+.Row {
+  display: flex;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Description {
+  @include text-medium();
+}
+
+.Links {
+  > :not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

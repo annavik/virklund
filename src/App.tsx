@@ -2,10 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Footer } from "./components/Footer/Footer";
 import { NavBar } from "./components/NavBar/NavBar";
-import { Contact } from "./pages/Contact/Contact";
+import { ContactPage } from "./pages/ContactPage/ContactPage";
 import { Home } from "./pages/Home/Home";
-import { Patterns } from "./pages/Patterns/Patterns";
-import { Virkskolan } from "./pages/Virkskolan/Virkskolan";
+import { LessonsPage } from "./pages/LessonsPage/LessonsPage";
+import { PatternPage } from "./pages/PatternPage/PatternPage";
+import { PatternsPage } from "./pages/PatternsPage/PatternsPage";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
         <div className={styles.Content}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/monster" element={<Patterns />} />
-            <Route path="/virkskolan" element={<Virkskolan />} />
-            <Route path="/kontakt" element={<Contact />} />
+            <Route path="/patterns" element={<PatternsPage />} />
+            <Route path="/patterns/:id" element={<PatternPage />} />
+            <Route path="/lessons" element={<LessonsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
         <div className={styles.FooterContainer}>

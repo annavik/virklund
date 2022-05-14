@@ -1,14 +1,14 @@
 import classNames from "classnames";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 import { Spacer } from "../Spacer/Spacer";
 import { Virklund } from "../Virklund/Virklund";
 import styles from "./NavBar.module.scss";
 
 const navItems = [
   { label: "Hem", path: "/" },
-  { label: "Mönster", path: "/monster" },
-  { label: "Virkskolan", path: "/virkskolan" },
-  { label: "Kontakt", path: "/kontakt" },
+  { label: "Mönster", path: "/patterns", matchPath: "/patterns/*" },
+  { label: "Virkskolan", path: "/lessons" },
+  { label: "Kontakt", path: "/contact" },
 ];
 
 export const NavBar = () => {
@@ -30,9 +30,12 @@ export const NavBar = () => {
   );
 };
 
-const NavItem = ({ navItem }: { navItem: { label: string; path: string } }) => {
-  const resolvedPath = useResolvedPath(navItem.path);
-  const match = useMatch({ path: resolvedPath.pathname, end: true });
+const NavItem = ({
+  navItem,
+}: {
+  navItem: { label: string; path: string; matchPath?: string };
+}) => {
+  const match = useMatch(navItem.matchPath ?? navItem.path);
 
   return (
     <Link to={navItem.path} className={styles.NavItem}>
