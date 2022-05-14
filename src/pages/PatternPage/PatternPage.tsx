@@ -55,34 +55,35 @@ export const PatternPage = () => {
             <div className={styles.Column}>
               <p className={styles.Description}>{pattern.description}</p>
               <Spacer size={20} />
-
               {pattern.links.map((link, index) => {
                 return (
                   <React.Fragment key={link.type}>
-                    <ArrowButton
-                      label={patternTagToLinkString(link.type)}
-                      onClick={() => {}}
-                    />
+                    <a href={link.src} download>
+                      <ArrowButton label={patternTagToLinkString(link.type)} />
+                    </a>
                     {index < pattern.links.length - 1 && <Spacer size={10} />}
                   </React.Fragment>
                 );
               })}
             </div>
             <Spacer size={40} />
-            <div className={styles.Column} style={{ flexShrink: 0 }}>
+            <div className={styles.Column}>
               <Bubble position="right" style={{ padding: "30px" }}>
                 <h3>Mönsterinfo</h3>
                 <Spacer size={10} />
                 <p>
-                  <strong>Virknål: </strong>7mm
+                  <strong>Virknål: </strong>
+                  {pattern.info.hook}
                 </p>
                 <Spacer size={5} />
                 <p>
-                  <strong>Garn: </strong>Lorem ipsum
+                  <strong>Garn: </strong>
+                  {pattern.info.yarn}
                 </p>
                 <Spacer size={5} />
                 <p>
-                  <strong>Svårighetsgrad: </strong>Lorem ipsum
+                  <strong>Svårighetsgrad: </strong>
+                  {pattern.info.level}
                 </p>
               </Bubble>
             </div>

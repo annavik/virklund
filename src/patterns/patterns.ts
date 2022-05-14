@@ -1,9 +1,10 @@
+import { ampel } from "./ampel/ampel";
 import { donna } from "./donna/donna";
 import { laptop } from "./laptop/laptop";
 import { laura } from "./laura/laura";
 import { Pattern, Tag } from "./types";
 
-export const patterns: Pattern[] = [donna, laptop, laura];
+export const patterns: Pattern[] = [ampel, donna, laptop, laura];
 
 export const patternTagToString = (tag: Tag): string => {
   return {

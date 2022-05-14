@@ -11,13 +11,13 @@ export const ArrowButton = ({
   plain,
 }: {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   reverse?: boolean;
   plain?: boolean;
 }) => {
   return (
     <div
-      role="button"
+      role={onClick ? "button" : undefined}
       className={classNames(styles.ArrowButton, {
         [styles.Reverse]: reverse,
         [styles.Plain]: plain,

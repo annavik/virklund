@@ -12,6 +12,11 @@ export interface Pattern {
     src: string;
   }[];
   description: string;
+  info: {
+    hook: string;
+    yarn: string;
+    level: string;
+  };
   video?: string;
 }
 
