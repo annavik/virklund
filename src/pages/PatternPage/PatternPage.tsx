@@ -43,6 +43,7 @@ export const PatternPage = () => {
             className={styles.Image}
             src={pattern.image.src}
             style={{ objectPosition: pattern.image.objectPosition }}
+            alt=""
           />
         )}
         <div className={styles.Content}>

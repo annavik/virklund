@@ -10,6 +10,7 @@ export const Card = ({ pattern }: { pattern: Pattern }) => {
         className={styles.Image}
         src={pattern.image.src}
         style={{ objectPosition: pattern.image.objectPosition }}
+        alt=""
       />
       <div className={styles.Content}>
         <span className={styles.Date}>

@@ -27,13 +27,18 @@ export const ArrowButton = ({
       <span>{label}</span>
       {plain ? (
         <div className={styles.ArrowContainer}>
-          <img src={arrowBlack} width={16} height={16} />
+          <img src={arrowBlack} width={16} height={16} alt="arrow" />
         </div>
       ) : (
         <>
           <Spacer size={10} />
           <div className={styles.ArrowContainer}>
-            <img src={plain ? arrowBlack : arrowWhite} width={16} height={16} />
+            <img
+              src={plain ? arrowBlack : arrowWhite}
+              width={16}
+              height={16}
+              alt="arrow"
+            />
           </div>
         </>
       )}

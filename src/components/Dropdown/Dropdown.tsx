@@ -46,7 +46,13 @@ export const Dropdown = ({
           onClick={() => !disabled && setIsOpen(!isOpen)}
         >
           <span>{selectedItem?.label}</span>
-          <img className={styles.Arrow} src={arrow} width={16} height={16} />
+          <img
+            className={styles.Arrow}
+            src={arrow}
+            width={16}
+            height={16}
+            alt="arrow"
+          />
         </div>
         {isOpen && (
           <div className={styles.Items}>

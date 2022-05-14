@@ -17,7 +17,7 @@ export const Intro = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <img className={styles.Image} src={crochetHook} />
+        <img className={styles.Image} src={crochetHook} alt="" />
       </div>
       <Spacer size={50} />
       <Button label="Lorem ipsum" onClick={() => navigate("/patterns")} />

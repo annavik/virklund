@@ -5,7 +5,7 @@ import styles from "./Card.module.scss";
 export const Card = ({ pattern }: { pattern: Pattern }) => {
   return (
     <div className={styles.Card}>
-      <img className={styles.Image} src={pattern.image.src} />
+      <img className={styles.Image} src={pattern.image.src} alt="" />
       <div className={styles.Content}>
         <span className={styles.Date}>
           {pattern.date.toISOString().split("T")[0]}

@@ -8,7 +8,13 @@ export const ContactPage = () => {
     <div className={styles.Container}>
       <Spacer size={80} />
       <div className={styles.Content}>
-        <img src={anna} width={300} height={300} className={styles.Image} />
+        <img
+          src={anna}
+          width={300}
+          height={300}
+          className={styles.Image}
+          alt="anna"
+        />
         <Spacer size={60} />
         <br />
         <div className={styles.BubbleContainer}>
@@ -23,13 +29,21 @@ export const ContactPage = () => {
             <Spacer size={15} />
             <p>
               Instagram 👉{" "}
-              <a href="https://www.instagram.com/annavirklund/" target="_blank">
+              <a
+                href="https://www.instagram.com/annavirklund/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 @annavirklund
               </a>
             </p>
             <p>
               YouTube 👉{" "}
-              <a href="https://www.youtube.com/c/AnnaVirklund/" target="_blank">
+              <a
+                href="https://www.youtube.com/c/AnnaVirklund/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 @Anna Virklund
               </a>
             </p>

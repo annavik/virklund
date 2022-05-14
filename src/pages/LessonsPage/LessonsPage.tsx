@@ -53,6 +53,7 @@ export const LessonsPage = () => {
                       className={styles.Marker}
                       src={stitchMarker}
                       height={20}
+                      alt="marker"
                     />
                   )}
                   {l.title}
