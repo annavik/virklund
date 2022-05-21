@@ -53,3 +53,13 @@
   left: -10px;
   transform: translate(-100%, -50%);
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Intro {
+    flex-direction: column;
+  }
+
+  .Content {
+    flex-direction: column-reverse;
+  }
+}

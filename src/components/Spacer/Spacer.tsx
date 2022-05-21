@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { useWindowSize } from "../../hooks/useWindowSize";
 import styles from "./Spacer.module.scss";
 
 export const Spacer = ({
@@ -8,19 +8,13 @@ export const Spacer = ({
   size: number;
   smallScreenSize?: number;
 }) => {
+  const { isSmallScreen } = useWindowSize();
+  const _size = isSmallScreen ? smallScreenSize : size;
+
   return (
-    <>
-      <div
-        className={classNames(styles.Spacer, styles.DefaultScreen)}
-        style={{ width: `${size}px`, height: `${size}px` }}
-      ></div>
-      <div
-        className={classNames(styles.Spacer, styles.SmallScreen)}
-        style={{
-          width: `${smallScreenSize ?? size}px`,
-          height: `${smallScreenSize ?? size}px`,
-        }}
-      ></div>
-    </>
+    <div
+      className={styles.Spacer}
+      style={{ width: `${_size}px`, height: `${_size}px` }}
+    ></div>
   );
 };

@@ -1,24 +1,34 @@
 import { Bubble } from "../../components/Bubble/Bubble";
 import { Spacer } from "../../components/Spacer/Spacer";
+import { useWindowSize } from "../../hooks/useWindowSize";
 import anna from "./anna.jpg";
 import styles from "./ContactPage.module.scss";
 
 export const ContactPage = () => {
+  const { isSmallScreen } = useWindowSize();
+  const imageSize = isSmallScreen ? 200 : 300;
+
   return (
     <div className={styles.Container}>
-      <Spacer size={80} />
+      <Spacer size={80} smallScreenSize={0} />
       <div className={styles.Content}>
         <img
           src={anna}
-          width={300}
-          height={300}
+          width={imageSize}
+          height={imageSize}
           className={styles.Image}
           alt="anna"
         />
-        <Spacer size={60} />
+        <Spacer size={60} smallScreenSize={30} />
         <br />
         <div className={styles.BubbleContainer}>
-          <Bubble position="right" style={{ height: "300px" }}>
+          <Bubble
+            position={isSmallScreen ? "top" : "right"}
+            style={{
+              height: "300px",
+              textAlign: isSmallScreen ? "center" : "left",
+            }}
+          >
             <h2>Kontakt</h2>
             <Spacer size={10} />
             <p>
@@ -55,7 +65,7 @@ export const ContactPage = () => {
           </Bubble>
         </div>
       </div>
-      <Spacer size={80} />
+      <Spacer size={80} smallScreenSize={20} />
     </div>
   );
 };

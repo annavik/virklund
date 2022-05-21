@@ -1,4 +1,6 @@
-export const lessons = [
+import { Lesson } from "./types";
+
+export const lessons: Lesson[] = [
   {
     id: "gL_atiPxDVI",
     src: "https://www.youtube.com/embed/gL_atiPxDVI",

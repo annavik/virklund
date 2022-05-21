@@ -21,3 +21,13 @@
 .Image {
   border-radius: 50%;
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Container {
+    justify-content: flex-start;
+  }
+
+  .Content {
+    flex-direction: column-reverse;
+  }
+}

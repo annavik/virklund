@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import arrow from "./arrow-down-black.png";
 import styles from "./Dropdown.module.scss";
 
@@ -8,12 +8,14 @@ export const Dropdown = ({
   disabled,
   items,
   selected,
+  style,
   onSelect,
 }: {
   label?: string;
   disabled?: boolean;
   items: { id: string; label: string }[];
-  selected: string;
+  selected?: string;
+  style?: React.CSSProperties;
   onSelect: (selected: string) => void;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +37,7 @@ export const Dropdown = ({
   }, [isOpen]);
 
   return (
-    <div>
+    <div style={style}>
       {label && <span className={styles.Label}>{label}</span>}
       <div ref={ref} className={styles.Container}>
         <div

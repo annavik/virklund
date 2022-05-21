@@ -1,0 +1,35 @@
+@import "../../../base.scss";
+
+.Menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.MenuItem {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+  position: relative;
+
+  span {
+    @include label();
+  }
+
+  &:hover:not(.Active) {
+    span {
+      color: $color-grey-dark;
+    }
+  }
+}
+
+.Marker {
+  position: absolute;
+  bottom: 4px;
+  height: 4px;
+  transform: translateY(100%);
+  background-color: $color-blue-medium;
+  transition: left 400ms ease, width 200ms ease;
+}

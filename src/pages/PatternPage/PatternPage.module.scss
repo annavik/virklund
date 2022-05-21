@@ -9,6 +9,7 @@
 }
 
 .Card {
+  width: 100%;
   border-radius: 12px;
   background-color: $color-white;
   box-shadow: $shadow;
@@ -18,8 +19,8 @@
 .Image {
   display: block;
   margin: 0 auto;
-  width: $content-width;
-  height: calc($content-width * 9 / 16);
+  width: 100%;
+  height: calc(100% * 9 / 16);
   object-fit: cover;
 }
 
@@ -31,23 +32,19 @@
   }
 }
 
-.Row {
-  display: flex;
-}
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Container {
+    margin: -20px;
+    width: calc(100% + 40px);
+  }
 
-.Column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-}
+  .TopContent {
+    display: none;
+  }
 
-.Description {
-  @include text-medium();
-}
-
-.Links {
-  > :not(:last-child) {
-    margin-bottom: 5px;
+  .Card {
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
   }
 }

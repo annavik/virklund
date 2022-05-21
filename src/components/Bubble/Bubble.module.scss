@@ -6,9 +6,20 @@
   justify-content: center;
   padding: 40px;
   border-radius: 12px;
-  background-color: $color-blue-transparent;
   box-sizing: border-box;
   position: relative;
+
+  &.LightBlue {
+    background-color: $color-blue-transparent;
+  }
+
+  &.LightGreen {
+    background-color: $color-green-transparent;
+  }
+
+  &.White {
+    background-color: $color-white;
+  }
 
   h2 {
     @include title-medium();
@@ -39,7 +50,6 @@
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-bottom-color: $color-blue-transparent;
 
   &.Top {
     bottom: 0;
@@ -63,5 +73,17 @@
     top: 50%;
     left: 0;
     transform: translate(-100%, -50%) rotate(-90deg);
+  }
+
+  &.LightBlue {
+    border-bottom-color: $color-blue-transparent;
+  }
+
+  &.LightGreen {
+    border-bottom-color: $color-green-transparent;
+  }
+
+  &.White {
+    border-bottom-color: $color-white;
   }
 }
