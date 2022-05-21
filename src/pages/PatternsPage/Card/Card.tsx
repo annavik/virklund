@@ -1,9 +1,20 @@
+import { truncate } from "lodash";
 import { Spacer } from "../../../components/Spacer/Spacer";
 import { patternTagToString } from "../../../patterns/patterns";
 import { Pattern } from "../../../patterns/types";
 import styles from "./Card.module.scss";
 
+const DESC_MAX_LENGTH = 150;
+
 export const Card = ({ pattern }: { pattern: Pattern }) => {
+  const description =
+    pattern.description.length > DESC_MAX_LENGTH
+      ? truncate(pattern.description, {
+          length: DESC_MAX_LENGTH,
+          separator: /,? +/,
+        })
+      : pattern.description;
+
   return (
     <div className={styles.Card}>
       <img
@@ -18,7 +29,8 @@ export const Card = ({ pattern }: { pattern: Pattern }) => {
         </span>
         <h2>{pattern.title}</h2>
         <Spacer size={5} />
-        <p>{pattern.description}</p>
+        <p>{description}</p>
+        <Spacer size={0} smallScreenSize={20} />
         <div className={styles.Tags}>
           {pattern.tags.map((tag) => (
             <div key={tag} className={styles.Tag}>

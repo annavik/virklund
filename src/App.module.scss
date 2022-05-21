@@ -9,7 +9,7 @@
 
 .NavBarContainer {
   flex-shrink: 0;
-  height: 64px;
+  height: 60px;
 }
 
 .ContentContainer {
@@ -22,7 +22,8 @@
 
 .Content {
   flex-grow: 1;
-  width: $page-width;
+  width: 100%;
+  max-width: $page-width;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
