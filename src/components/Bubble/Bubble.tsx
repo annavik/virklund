@@ -10,8 +10,8 @@ const positionClasses = {
 };
 
 const themeClasses = {
-  ["light-blue"]: styles.LightBlue,
-  ["light-green"]: styles.LightGreen,
+  "light-blue": styles.LightBlue,
+  "light-green": styles.LightGreen,
   white: styles.White,
 };
 
