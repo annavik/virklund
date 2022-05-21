@@ -1,0 +1,25 @@
+@import "../../base.scss";
+
+.Spacer {
+  flex-shrink: 0;
+
+  &:not(.SmallScreen) {
+    display: block;
+  }
+
+  &.SmallScreen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Spacer {
+    &:not(.SmallScreen) {
+      display: none;
+    }
+
+    &.SmallScreen {
+      display: block;
+    }
+  }
+}

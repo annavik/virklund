@@ -35,3 +35,9 @@
   right: -30px;
   transform: translate(100%, -50%);
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Yarn {
+    display: none;
+  }
+}

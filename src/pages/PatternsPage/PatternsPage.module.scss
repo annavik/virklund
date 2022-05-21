@@ -1,10 +1,17 @@
 @import "../../base.scss";
 
 .Container {
-  width: $content-width;
+  width: 100%;
+  max-width: $content-width;
   margin: 0 auto;
 }
 
 .Controls {
   display: flex;
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Controls {
+    display: none;
+  }
 }

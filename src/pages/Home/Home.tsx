@@ -28,7 +28,7 @@ export const Home = () => {
           onClick: () => navigate("/patterns"),
         }}
       />
-      <Spacer size={30} />
+      <Spacer size={30} smallScreenSize={20} />
       <div className={styles.LatestPatterns}>
         {latestPatterns.map((pattern) => (
           <Link to={`/patterns/${pattern.id}`} key={pattern.id}>
@@ -36,7 +36,7 @@ export const Home = () => {
           </Link>
         ))}
       </div>
-      <Spacer size={80} />
+      <Spacer size={80} smallScreenSize={0} />
     </div>
   );
 };

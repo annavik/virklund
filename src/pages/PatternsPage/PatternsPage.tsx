@@ -80,9 +80,9 @@ export const PatternsPage = () => {
 
   return (
     <div className={styles.Container}>
-      <Spacer size={80} />
+      <Spacer size={80} smallScreenSize={20} />
       <SectionTitle title="Mönster" />
-      <Spacer size={30} />
+      <Spacer size={30} smallScreenSize={0} />
       <div className={styles.Controls}>
         <div style={{ flex: 2 }}>
           <TextInput
@@ -110,16 +110,18 @@ export const PatternsPage = () => {
           />
         </div>
       </div>
-      <Spacer size={40} />
+      <Spacer size={40} smallScreenSize={20} />
       {patternList.map((pattern, index) => (
         <React.Fragment key={pattern.id}>
           <Link to={`/patterns/${pattern.id}`}>
             <Card pattern={pattern} />
           </Link>
-          {index < patternList.length - 1 && <Spacer size={30} />}
+          {index < patternList.length - 1 && (
+            <Spacer size={30} smallScreenSize={20} />
+          )}
         </React.Fragment>
       ))}
-      <Spacer size={80} />
+      <Spacer size={80} smallScreenSize={0} />
     </div>
   );
 };

@@ -58,3 +58,18 @@
   background-color: $color-blue-medium;
   margin-right: 10px;
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Card {
+    flex-direction: column;
+    height: auto;
+
+    .Image {
+      width: 100%;
+    }
+
+    .Tags {
+      position: static;
+    }
+  }
+}
