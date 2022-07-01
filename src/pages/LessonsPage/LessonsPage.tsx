@@ -115,11 +115,18 @@ const LessonsList = ({
 
           return (
             <li
+              role="button"
+              tabIndex={0}
               key={l.id}
               className={classNames({
                 [styles.Active]: isActive,
               })}
               onClick={() => setActiveLesson(l)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setActiveLesson(l);
+                }
+              }}
             >
               {isActive && (
                 <img

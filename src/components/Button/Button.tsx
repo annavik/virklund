@@ -11,8 +11,7 @@ export const Button = ({
   onClick: () => void;
 }) => {
   return (
-    <div
-      role="button"
+    <button
       className={classNames(styles.Button, {
         [styles.Primary]: theme === "primary",
         [styles.Secondary]: theme === "secondary",
@@ -20,6 +19,6 @@ export const Button = ({
       onClick={onClick}
     >
       <span>{label}</span>
-    </div>
+    </button>
   );
 };

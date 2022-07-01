@@ -18,11 +18,17 @@ export const ArrowButton = ({
   return (
     <div
       role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
       className={classNames(styles.ArrowButton, {
         [styles.Reverse]: reverse,
         [styles.Plain]: plain,
       })}
       onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          onClick?.();
+        }
+      }}
     >
       <span>{label}</span>
       {plain ? (
