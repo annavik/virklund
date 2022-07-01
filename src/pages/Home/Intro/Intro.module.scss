@@ -2,16 +2,20 @@
 
 .Intro {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 380px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .Content {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Image {
+  max-width: 320px;
 }
 
 .Title {
@@ -22,11 +26,13 @@
   @include text-medium();
 }
 
-.Image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 150px;
-  padding: 30px;
-  transform: translateX(-100%);
+@media screen and (max-width: $small-screen-breakpoint) {
+  .Intro {
+    flex-direction: column;
+  }
+
+  .Content {
+    align-items: center;
+    text-align: center;
+  }
 }

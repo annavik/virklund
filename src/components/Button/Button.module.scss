@@ -4,18 +4,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   height: 40px;
   padding: 0 40px;
   border-radius: 20px;
-  background-color: $color-green-medium;
 
   span {
     @include button-label();
-    color: $color-white;
   }
 
   &:hover {
-    background-color: $color-green-dark;
     cursor: pointer;
+  }
+
+  &.Primary {
+    background-color: $color-green-medium;
+
+    span {
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-green-dark;
+    }
+  }
+
+  &.Secondary {
+    border: 2px $color-blue-dark solid;
+
+    span {
+      color: $color-blue-dark;
+    }
   }
 }

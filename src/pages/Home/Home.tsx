@@ -4,9 +4,12 @@ import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
 import { patterns, sortPatternsByDate } from "../../patterns/patterns";
 import { Pattern } from "../../patterns/types";
+import book from "./book.png";
 import { Card } from "./Card/Card";
 import styles from "./Home.module.scss";
 import { Intro } from "./Intro/Intro";
+import light from "./light.png";
+import { Teaser } from "./Teaser/Teaser";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -18,9 +21,23 @@ export const Home = () => {
 
   return (
     <div className={styles.Container}>
-      <Spacer size={80} />
+      <Spacer size={80} smallScreenSize={20} />
       <Intro />
-      <Spacer size={100} />
+      <Spacer size={100} smallScreenSize={60} />
+      <Teaser
+        title="Lorem ipsum dolor sit amet"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        image={{ src: book, alignment: "left" }}
+        button={{ label: "Lorem ipsum", onClick: () => {} }}
+      />
+      <Spacer size={50} smallScreenSize={20} />
+      <Teaser
+        title="Lorem ipsum dolor sit amet"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        image={{ src: light, alignment: "right" }}
+        button={{ label: "Lorem ipsum", onClick: () => {} }}
+      />
+      <Spacer size={100} smallScreenSize={60} />
       <SectionTitle
         title="Senaste mönster"
         rightAccessory={{
