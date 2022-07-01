@@ -2,6 +2,7 @@
 
 .App {
   height: 100vh;
+  min-width: 320px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -10,6 +11,8 @@
 .NavBarContainer {
   flex-shrink: 0;
   height: 60px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-grey-light;
 }
 
 .ContentContainer {
