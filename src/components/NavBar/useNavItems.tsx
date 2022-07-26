@@ -10,6 +10,7 @@ const NAV_ITEMS = [
     matchPath: "/patterns/*",
   },
   { id: uniqueId("navItem"), label: "Virkskolan", path: "/lessons" },
+  { id: uniqueId("navItem"), label: "Tips", path: "/tips" },
   { id: uniqueId("navItem"), label: "Kontakt", path: "/contact" },
 ];
 

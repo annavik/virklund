@@ -13,6 +13,7 @@
 
 .Description {
   @include text-medium();
+  white-space: pre-wrap;
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {

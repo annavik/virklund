@@ -25,7 +25,7 @@ export const ampel: Pattern = {
   description:
     "Visst är det fint med lite hängande växter i fönstren? I den här mönstret virkar vi en ampel för krukväxter.",
   info: {
-    hook: "7 mm",
+    hook: "7mm",
     yarn: "50 g garn som passar virknål 4-5. Mönstret virkas med dubbelt garn.",
     level: "Passar nybörjare",
   },
