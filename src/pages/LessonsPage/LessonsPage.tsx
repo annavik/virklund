@@ -1,7 +1,7 @@
-import classNames from "classnames";
 import { useEffect, useRef, useState } from "react";
 import { Bubble } from "../../components/Bubble/Bubble";
 import { Dropdown } from "../../components/Dropdown/Dropdown";
+import { InteractiveList } from "../../components/List/List";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../components/Spacer/Spacer";
 import { VideoPlayer } from "../../components/VideoPlayer/VideoPlayer";
@@ -9,7 +9,6 @@ import { Virklund } from "../../components/Virklund/Virklund";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { lessons } from "./lessons";
 import styles from "./LessonsPage.module.scss";
-import stitchMarker from "./stitch-marker.png";
 import { Lesson } from "./types";
 
 export const LessonsPage = () => {
@@ -17,6 +16,12 @@ export const LessonsPage = () => {
   const windowSize = useWindowSize();
   const [videoWidth, setVideoWidth] = useState<number>();
   const [activeLesson, setActiveLesson] = useState(lessons[0]);
+
+  const lessonListItems = lessons.map((l) => ({
+    id: l.id,
+    content: l.title,
+    active: l.id === activeLesson.id,
+  }));
 
   useEffect(() => {
     const containerWidth = containerRef.current?.getBoundingClientRect().width;
@@ -59,10 +64,20 @@ export const LessonsPage = () => {
             setActiveLesson={setActiveLesson}
           />
         ) : (
-          <LessonsList
-            activeLesson={activeLesson}
-            setActiveLesson={setActiveLesson}
-          />
+          <div>
+            <SectionTitle title="Avsnitt" />
+            <Spacer size={15} />
+            <InteractiveList
+              items={lessonListItems}
+              onItemClick={(id) => {
+                const lesson = lessons.find((l) => l.id === id);
+                if (lesson) {
+                  setActiveLesson(lesson);
+                }
+              }}
+              style={{ padding: 0 }}
+            />
+          </div>
         )}
       </div>
       <Spacer size={80} smallScreenSize={0} />
@@ -95,52 +110,5 @@ const LessonsDropdown = ({
         }
       }}
     />
-  );
-};
-
-const LessonsList = ({
-  activeLesson,
-  setActiveLesson,
-}: {
-  activeLesson: Lesson;
-  setActiveLesson: (lesson: Lesson) => void;
-}) => {
-  return (
-    <div className={styles.List}>
-      <SectionTitle title="Avsnitt" />
-      <Spacer size={15} />
-      <ul>
-        {lessons.map((l) => {
-          const isActive = l.id === activeLesson.id;
-
-          return (
-            <li
-              role="button"
-              tabIndex={0}
-              key={l.id}
-              className={classNames({
-                [styles.Active]: isActive,
-              })}
-              onClick={() => setActiveLesson(l)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  setActiveLesson(l);
-                }
-              }}
-            >
-              {isActive && (
-                <img
-                  className={styles.Marker}
-                  src={stitchMarker}
-                  height={20}
-                  alt="marker"
-                />
-              )}
-              {l.title}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
   );
 };

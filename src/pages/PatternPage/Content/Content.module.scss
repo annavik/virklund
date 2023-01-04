@@ -11,11 +11,6 @@
   flex: 1;
 }
 
-.Description {
-  @include text-medium();
-  white-space: pre-wrap;
-}
-
 @media screen and (max-width: $small-screen-breakpoint) {
   .Columns {
     flex-direction: column;

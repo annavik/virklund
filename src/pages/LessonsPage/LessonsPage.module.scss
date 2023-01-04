@@ -23,37 +23,6 @@
   justify-content: center;
 }
 
-.List {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-    li {
-      @include text-medium();
-      font-weight: 500;
-      color: $color-grey-dark;
-      margin-bottom: 10px;
-      position: relative;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &.Active {
-        color: $color-black;
-      }
-    }
-  }
-}
-
-.Marker {
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  transform: translate(-100%, -50%);
-}
-
 @media screen and (max-width: $small-screen-breakpoint) {
   .Intro {
     flex-direction: column;

@@ -1,0 +1,25 @@
+@import "../../base.scss";
+
+.MarkdownContent {
+  h2 {
+    @include title-small();
+    margin-bottom: 10px;
+  }
+
+  p {
+    @include text-medium();
+    margin-bottom: 20px;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    font-weight: 500;
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+}

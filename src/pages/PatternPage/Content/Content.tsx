@@ -1,6 +1,8 @@
-import React from "react";
+import classNames from "classnames";
+import React, { useEffect, useState } from "react";
 import { ArrowButton } from "../../../components/ArrowButton/ArrowButton";
 import { Bubble } from "../../../components/Bubble/Bubble";
+import { MarkdownContent } from "../../../components/MarkdownContent/MarkdownContent";
 import { SectionTitle } from "../../../components/SectionTitle/SectionTitle";
 import { Spacer } from "../../../components/Spacer/Spacer";
 import { useWindowSize } from "../../../hooks/useWindowSize";
@@ -10,6 +12,15 @@ import styles from "./Content.module.scss";
 
 export const Content = ({ pattern }: { pattern: Pattern }) => {
   const { isSmallScreen } = useWindowSize();
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    if (pattern.content) {
+      fetch(pattern.content)
+        .then((response) => response.text())
+        .then((result) => setContent(result));
+    }
+  }, []);
 
   return (
     <>
@@ -19,8 +30,8 @@ export const Content = ({ pattern }: { pattern: Pattern }) => {
       />
       <Spacer size={20} />
       <div className={styles.Columns}>
-        <div className={styles.Column}>
-          <p className={styles.Description}>{pattern.description}</p>
+        <div className={classNames(styles.Column, styles.Content)}>
+          <MarkdownContent content={content} />
           <Spacer size={20} />
           {pattern.links.map((link, index) => {
             return (
