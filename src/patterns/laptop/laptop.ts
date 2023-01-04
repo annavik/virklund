@@ -23,7 +23,7 @@ export const laptop: Pattern = {
     },
   ],
   description:
-    "Klart att datorn måste få sig ett fodral så att den inte skadas i väskan! I det här mönstret virkar vi ett fodral till en laptop i 13-tumsstorlek, men det går bra att anpassa storleken på fodralet.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "7mm",
     yarn: "Gärna i två färger (ca 200 g + 50 g), som passar virknål 4-5. Mönstret virkas med dubbelt garn.",

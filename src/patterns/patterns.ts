@@ -1,12 +1,17 @@
 import { ampel } from "./ampel/ampel";
 import { donna } from "./donna/donna";
 import { korg } from "./korg/korg";
+import { kyckling } from "./kyckling/kyckling";
+import { lantvallen } from "./lantvallen/lantvallen";
 import { laptop } from "./laptop/laptop";
 import { laura } from "./laura/laura";
+import { lov } from "./lov/lov";
+import { presentband } from "./presentband/presentband";
 import { snoflinga } from "./snoflinga/snoflinga";
 import { tammy } from "./tammy/tammy";
 import { tomteluva } from "./tomteluva/tomteluva";
 import { Pattern, Tag } from "./types";
+import { uggla } from "./uggla/uggla";
 
 export const patterns: Pattern[] = [
   ampel,
@@ -17,6 +22,11 @@ export const patterns: Pattern[] = [
   snoflinga,
   tammy,
   tomteluva,
+  presentband,
+  uggla,
+  lov,
+  kyckling,
+  lantvallen,
 ];
 
 export const patternTagToString = (tag: Tag): string => {

@@ -1,22 +1,22 @@
 import { Pattern, Tag } from "../types";
-import image from "./snoflinga.jpg";
+import image from "./kyckling.jpg";
 
-export const snoflinga: Pattern = {
-  id: "snoflinga",
-  title: "Snöflinga",
+export const kyckling: Pattern = {
+  id: "kyckling",
+  title: "Kyckling",
   image: {
     src: image,
     objectPosition: "center",
   },
-  date: new Date("2017-12-03"),
+  date: new Date("2021-04-01"),
   tags: [Tag.Video],
   links: [],
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "3mm",
-    yarn: "Ett som passar garnet, bara lite behövs.",
+    yarn: "Garn som passar virknål 3, gärna i bomull.",
     level: "Enkel",
   },
-  video: "https://www.youtube.com/embed/Q1ynLeRZLkg",
+  video: "https://www.youtube.com/embed/drJAokQZBmk",
 };

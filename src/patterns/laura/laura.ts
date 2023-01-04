@@ -23,7 +23,7 @@ export const laura: Pattern = {
     },
   ],
   description:
-    "I det här mönstret virkar vi en mysig mössa inför hösten som jag har döpt till Laura Palmer. Det är en väldigt enkel och snabb mössa att virka!",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "7mm",
     yarn: "100 g garn som passar virknål 4-5. Mönstret virkas med dubbelt garn.",

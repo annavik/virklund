@@ -23,7 +23,7 @@ export const ampel: Pattern = {
     },
   ],
   description:
-    "Visst är det fint med lite hängande växter i fönstren? I den här mönstret virkar vi en ampel för krukväxter.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "7mm",
     yarn: "50 g garn som passar virknål 4-5. Mönstret virkas med dubbelt garn.",

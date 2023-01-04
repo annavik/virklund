@@ -22,7 +22,7 @@ export const donna: Pattern = {
     },
   ],
   description:
-    "I det här mönstret virkar vi en härlig sjal som är perfekt att värma sig i under hösten. Sjalen har jag döpt till Donna och för en komplett outfit rekommenderar jag såklart att man kombinerar med mössan Laura i en passande färg.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "7mm",
     yarn: "150-200 g av ett garn som passar virknål 4-5.",

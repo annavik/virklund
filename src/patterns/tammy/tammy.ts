@@ -1,18 +1,18 @@
 import { Pattern, Tag } from "../types";
-import image from "./missing.jpg";
+import image from "./tammy.jpg";
 
 export const tammy: Pattern = {
   id: "tammy",
   title: "Pannband Tammy",
   image: {
     src: image,
-    objectPosition: "center",
+    objectPosition: "center left",
   },
   date: new Date("2017-10-29"),
   tags: [Tag.Video],
   links: [],
   description:
-    "I den här videon utökar vi Twin Peaks-kollektionen med pannbandet Tammy. Pannbandet är ett perfekt nybörjarprojekt eftersom det både är enkelt att virka och går snabbt att få klart. Det går även att anpassa beroende på virknål och garn.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "Valfri (i videon används 7mm)",
     yarn: "Ett som passar garnet (för mig gick det åt ca 50g)",

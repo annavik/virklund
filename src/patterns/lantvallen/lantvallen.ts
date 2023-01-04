@@ -1,22 +1,23 @@
 import { Pattern, Tag } from "../types";
-import image from "./tomteluva.jpg";
+import image from "./lantvallen.jpg";
 
-export const tomteluva: Pattern = {
-  id: "tomteluva",
-  title: "Tomteluva",
+export const lantvallen: Pattern = {
+  id: "lantvallen",
+  title: "Väggbonad Lantvallen",
   image: {
     src: image,
     objectPosition: "center right",
   },
-  date: new Date("2017-12-19"),
+  date: new Date("2021-04-28"),
   tags: [Tag.Video],
   links: [],
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
     hook: "7mm",
-    yarn: "Ett som passar garnet. 50g vitt och 100g rött.",
+    yarn: "Garn som passar virknål 3, gärna i ull.",
     level: "Enkel",
   },
-  video: "https://www.youtube.com/embed/AApm6Vlz1L8",
+  video:
+    "https://www.youtube.com/embed/videoseries?list=PLpVo7v2ivZWndQpitaGfvyKYXlUnMk6HL",
 };
