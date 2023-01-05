@@ -31,7 +31,7 @@ export const Bubble = ({
       className={classNames(styles.Bubble, themeClasses[theme])}
       style={style}
     >
-      <div>{children}</div>
+      <div className={styles.Content}>{children}</div>
       <div
         className={classNames(
           styles.Arrow,

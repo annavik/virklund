@@ -9,16 +9,3 @@
 .Title {
   @include title-medium();
 }
-
-.SubTitle {
-  @include text-small();
-  color: $color-grey-dark;
-  font-style: italic;
-}
-
-.Line {
-  width: 100%;
-  height: 2px;
-  border-radius: 1px;
-  background-color: $color-grey-light;
-}

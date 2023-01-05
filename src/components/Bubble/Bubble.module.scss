@@ -9,6 +9,10 @@
   box-sizing: border-box;
   position: relative;
 
+  .Content {
+    width: 100%;
+  }
+
   &.LightBlue {
     background-color: $color-blue-transparent;
   }

@@ -3,7 +3,7 @@ Välkommen till Lantvallen Väggbonad CAL! CAL står för crochet along och det 
 ## Det som behövs för projektet är:
 
 - En virknål i storleken 7 mm.
-- Garn (gärna i 100% ull) som passar virknål 7-8. Jag kommer använda garnet "Snow" från Drops i färgerna Sjögrön, Saphir och Ljusbeige. Totalt kommer vi använda ca 100 g garn.
+- Garn (gärna i 100% ull) som passar virknål 7-8. Jag använde garnet "Snow" från Drops i färgerna Sjögrön, Saphir och Ljusbeige. Totalt behövs ca 100 g garn.
 - Sax.
 - Synål med stort nålöga.
 - Pinne från skogen, ca 30 cm (för upphängning)
@@ -16,4 +16,4 @@ Välkommen till Lantvallen Väggbonad CAL! CAL står för crochet along och det 
 - [Del 3](https://youtu.be/zT1xrxuK4B8)
 - [Del 4](https://youtu.be/TnYl8tnqeVM)
 
-Om du virkar detta mönster vore det jättekul om du delade med dig på Instagram under hashtaggen **#lantvallencal**!
+Om du virkar detta mönster vore det jättekul om du delade med dig på Instagram under hashtaggen #lantvallencal!

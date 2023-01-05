@@ -6,7 +6,7 @@ import { useWindowSize } from "../../hooks/useWindowSize";
 import { patterns } from "../../patterns/patterns";
 import { Content } from "./Content/Content";
 import styles from "./PatternPage.module.scss";
-import { PatternsButton } from "./PatternsButton/PatternButton";
+import { BackButton, PatternsButton } from "./PatternsButton/PatternButton";
 
 export const PatternPage = () => {
   const params = useParams();
@@ -30,7 +30,7 @@ export const PatternPage = () => {
     <div ref={containerRef} className={styles.Container}>
       <div className={styles.TopContent}>
         <Spacer size={40} />
-        <PatternsButton />
+        <BackButton />
         <Spacer size={40} />
       </div>
       <div className={styles.Card}>

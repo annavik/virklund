@@ -1,18 +1,14 @@
 @import "../../../base.scss";
 
-.Columns {
-  display: flex;
+.Title {
+  @include title-medium();
+  text-align: center;
 }
 
-.Column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-}
-
-@media screen and (max-width: $small-screen-breakpoint) {
-  .Columns {
-    flex-direction: column;
-  }
+.SubTitle {
+  display: block;
+  text-align: center;
+  @include text-medium();
+  color: $color-grey-dark;
+  font-style: italic;
 }
