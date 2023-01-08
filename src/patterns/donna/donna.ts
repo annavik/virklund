@@ -2,6 +2,7 @@ import { Pattern, Tag } from "../types";
 import pdf from "./annavirklund_donna.pdf";
 import print from "./annavirklund_donna_print.pdf";
 import image from "./donna.jpg";
+import content from "./donna.md";
 
 export const donna: Pattern = {
   id: "donna",
@@ -24,9 +25,10 @@ export const donna: Pattern = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
-    hook: "7mm",
+    hook: "7 mm",
     yarn: "150-200 g av ett garn som passar virknål 4-5.",
     level: "Passar nybörjare",
   },
   video: "https://www.youtube.com/embed/afFNpYO8w5w",
+  content,
 };

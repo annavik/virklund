@@ -1,5 +1,6 @@
 import { Pattern, Tag } from "../types";
 import image from "./tammy.jpg";
+import content from "./tammy.md";
 
 export const tammy: Pattern = {
   id: "tammy",
@@ -14,9 +15,10 @@ export const tammy: Pattern = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
-    hook: "Valfri (i videon används 7mm)",
+    hook: "Valfri (i videon används 7 mm)",
     yarn: "Ett som passar garnet (för mig gick det åt ca 50g)",
     level: "Passar nybörjare",
   },
   video: "https://www.youtube.com/embed/6SGKlKv49sc",
+  content,
 };

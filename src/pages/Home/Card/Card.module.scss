@@ -27,7 +27,6 @@
 .Date {
   @include text-small();
   color: $color-grey-dark;
-  font-style: italic;
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {

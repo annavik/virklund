@@ -50,3 +50,6 @@ export const sortPatternsByDate = (patterns: Pattern[]): Pattern[] =>
 
 export const sortPatternsByName = (patterns: Pattern[]): Pattern[] =>
   patterns.sort((a, b) => (a.title > b.title ? 1 : -1));
+
+export const getPatternDateString = (pattern: Pattern): string =>
+  `🗓 ${pattern.date.toISOString().split("T")[0]}`;

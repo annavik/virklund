@@ -15,7 +15,7 @@ export const lantvallen: Pattern = {
   tags: [Tag.Video],
   links: [],
   info: {
-    hook: "7mm",
+    hook: "7 mm",
     yarn: "Garn som passar virknål 3, gärna i ull.",
     level: "Enkel",
   },

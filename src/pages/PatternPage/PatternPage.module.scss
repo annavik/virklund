@@ -26,10 +26,6 @@
 
 .Content {
   padding: 40px;
-
-  h2 {
-    @include title-small();
-  }
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {

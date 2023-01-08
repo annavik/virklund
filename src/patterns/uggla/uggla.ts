@@ -1,5 +1,6 @@
 import { Pattern, Tag } from "../types";
 import image from "./uggla.jpg";
+import content from "./uggla.md";
 
 export const uggla: Pattern = {
   id: "uggla",
@@ -14,9 +15,10 @@ export const uggla: Pattern = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
-    hook: "3mm",
+    hook: "3 mm",
     yarn: "Ett som passar virknål 3-4, gärna i 2 färger.",
     level: "Enkel",
   },
   video: "https://www.youtube.com/embed/NVEQmjDDI5o",
+  content,
 };

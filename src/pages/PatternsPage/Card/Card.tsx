@@ -1,12 +1,16 @@
 import { truncate } from "lodash";
 import { Spacer } from "../../../components/Spacer/Spacer";
-import { patternTagToString } from "../../../patterns/patterns";
+import {
+  getPatternDateString,
+  patternTagToString,
+} from "../../../patterns/patterns";
 import { Pattern } from "../../../patterns/types";
 import styles from "./Card.module.scss";
 
 const DESC_MAX_LENGTH = 150;
 
 export const Card = ({ pattern }: { pattern: Pattern }) => {
+  const date = getPatternDateString(pattern);
   const description =
     pattern.description.length > DESC_MAX_LENGTH
       ? truncate(pattern.description, {
@@ -24,9 +28,7 @@ export const Card = ({ pattern }: { pattern: Pattern }) => {
         alt=""
       />
       <div className={styles.Content}>
-        <span className={styles.Date}>
-          {pattern.date.toISOString().split("T")[0]}
-        </span>
+        <span className={styles.Date}>{date}</span>
         <h2>{pattern.title}</h2>
         <Spacer size={5} />
         <p>{description}</p>

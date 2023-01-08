@@ -53,7 +53,7 @@ export const PatternPage = () => {
         </div>
       </div>
       <div className={styles.BottomContent}>
-        <Spacer size={40} />
+        <Spacer size={40} smallScreenSize={0} />
         <PatternsButton />
         <Spacer size={40} />
       </div>

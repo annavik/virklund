@@ -1,5 +1,6 @@
 import { Pattern, Tag } from "../types";
 import image from "./korg.jpg";
+import content from "./korg.md";
 
 export const korg: Pattern = {
   id: "korg",
@@ -14,9 +15,10 @@ export const korg: Pattern = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
-    hook: "5mm",
+    hook: "5 mm",
     yarn: "100 g Järbo Soft Cotton (eller liknande). Mönstret virkas med dubbelt garn.",
     level: "Passar nybörjare",
   },
   video: "https://www.youtube.com/embed/rrpszsbOJA4",
+  content,
 };

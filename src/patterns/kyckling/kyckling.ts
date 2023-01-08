@@ -1,5 +1,6 @@
 import { Pattern, Tag } from "../types";
 import image from "./kyckling.jpg";
+import content from "./kyckling.md";
 
 export const kyckling: Pattern = {
   id: "kyckling",
@@ -14,9 +15,10 @@ export const kyckling: Pattern = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
   info: {
-    hook: "3mm",
+    hook: "3 mm",
     yarn: "Garn som passar virknål 3, gärna i bomull.",
     level: "Enkel",
   },
   video: "https://www.youtube.com/embed/drJAokQZBmk",
+  content,
 };
