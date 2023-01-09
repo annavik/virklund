@@ -1,4 +1,4 @@
-import { Pattern, Tag } from "../types";
+import { LinkType, Pattern, Tag } from "../types";
 import pdf from "./annavirklund_laura.pdf";
 import print from "./annavirklund_laura_print.pdf";
 import image from "./laura.jpg";
@@ -12,14 +12,14 @@ export const laura: Pattern = {
     objectPosition: "center right",
   },
   date: new Date("2017-07-28"),
-  tags: [Tag.PDF, Tag.Print, Tag.Video],
+  tags: [Tag.PDF, Tag.Video, Tag.Beginner],
   links: [
     {
-      type: Tag.PDF,
+      type: LinkType.PDF,
       src: pdf,
     },
     {
-      type: Tag.Print,
+      type: LinkType.Print,
       src: print,
     },
   ],

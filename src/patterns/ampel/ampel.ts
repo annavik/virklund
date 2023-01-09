@@ -1,8 +1,8 @@
-import { Pattern, Tag } from "../types";
-import pdf from "./annavirklund_ampel.pdf";
-import print from "./annavirklund_ampel_print.pdf";
+import { LinkType, Pattern, Tag } from "../types";
 import image from "./ampel.jpg";
 import content from "./ampel.md";
+import pdf from "./annavirklund_ampel.pdf";
+import print from "./annavirklund_ampel_print.pdf";
 
 export const ampel: Pattern = {
   id: "ampel",
@@ -12,14 +12,14 @@ export const ampel: Pattern = {
     objectPosition: "center left",
   },
   date: new Date("2017-07-26"),
-  tags: [Tag.PDF, Tag.Print, Tag.Video],
+  tags: [Tag.PDF, Tag.Video, Tag.Beginner],
   links: [
     {
-      type: Tag.PDF,
+      type: LinkType.PDF,
       src: pdf,
     },
     {
-      type: Tag.Print,
+      type: LinkType.Print,
       src: print,
     },
   ],

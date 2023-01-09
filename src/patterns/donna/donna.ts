@@ -1,4 +1,4 @@
-import { Pattern, Tag } from "../types";
+import { LinkType, Pattern, Tag } from "../types";
 import pdf from "./annavirklund_donna.pdf";
 import print from "./annavirklund_donna_print.pdf";
 import image from "./donna.jpg";
@@ -11,14 +11,14 @@ export const donna: Pattern = {
     src: image,
   },
   date: new Date("2017-10-02"),
-  tags: [Tag.PDF, Tag.Print, Tag.Video],
+  tags: [Tag.PDF, Tag.Video, Tag.Beginner],
   links: [
     {
-      type: Tag.PDF,
+      type: LinkType.PDF,
       src: pdf,
     },
     {
-      type: Tag.Print,
+      type: LinkType.Print,
       src: print,
     },
   ],

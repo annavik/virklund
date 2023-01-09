@@ -10,7 +10,7 @@ export const korg: Pattern = {
     objectPosition: "center left",
   },
   date: new Date("2017-08-25"),
-  tags: [Tag.Video],
+  tags: [Tag.Video, Tag.Beginner],
   links: [],
   description:
     "Finns det något härligare än att servera fika i en egentillverkad korg? Tror inte det!",

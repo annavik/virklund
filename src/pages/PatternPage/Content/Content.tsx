@@ -6,7 +6,7 @@ import { Spacer } from "../../../components/Spacer/Spacer";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import {
   getPatternDateString,
-  patternTagToLinkString,
+  linkTypeToLinkString,
 } from "../../../patterns/patterns";
 import { Pattern } from "../../../patterns/types";
 import styles from "./Content.module.scss";
@@ -67,7 +67,7 @@ export const Content = ({ pattern }: { pattern: Pattern }) => {
               {pattern.links.map((link, index) => (
                 <React.Fragment key={link.type}>
                   <a href={link.src} download>
-                    <ArrowButton label={patternTagToLinkString(link.type)} />
+                    <ArrowButton label={linkTypeToLinkString(link.type)} />
                   </a>
                   {index < pattern.links.length - 1 && <Spacer size={10} />}
                 </React.Fragment>

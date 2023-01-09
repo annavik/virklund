@@ -10,7 +10,7 @@ import { presentband } from "./presentband/presentband";
 import { snoflinga } from "./snoflinga/snoflinga";
 import { tammy } from "./tammy/tammy";
 import { tomteluva } from "./tomteluva/tomteluva";
-import { Pattern, Tag } from "./types";
+import { LinkType, Pattern, Tag } from "./types";
 import { uggla } from "./uggla/uggla";
 
 export const patterns: Pattern[] = [
@@ -32,17 +32,16 @@ export const patterns: Pattern[] = [
 export const patternTagToString = (tag: Tag): string => {
   return {
     [Tag.PDF]: "PDF",
-    [Tag.Print]: "Utskrift",
-    [Tag.Video]: "YouTube",
+    [Tag.Video]: "Video",
+    [Tag.Beginner]: "Nybörjarvänligt",
   }[tag];
 };
 
-export const patternTagToLinkString = (tag: Tag): string => {
+export const linkTypeToLinkString = (linkType: LinkType): string => {
   return {
-    [Tag.PDF]: "Ladda ner mönster",
-    [Tag.Print]: "Ladda ner utskriftsversion",
-    [Tag.Video]: "Till instruktionsvideo",
-  }[tag];
+    [LinkType.PDF]: "Ladda ner mönster",
+    [LinkType.Print]: "Ladda ner utskriftsversion",
+  }[linkType];
 };
 
 export const sortPatternsByDate = (patterns: Pattern[]): Pattern[] =>

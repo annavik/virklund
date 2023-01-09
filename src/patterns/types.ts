@@ -9,7 +9,7 @@ export interface Pattern {
   date: Date;
   tags: Tag[];
   links: {
-    type: Tag;
+    type: LinkType;
     src: string;
   }[];
   info: {
@@ -22,7 +22,12 @@ export interface Pattern {
 }
 
 export enum Tag {
+  Beginner,
+  PDF,
+  Video,
+}
+
+export enum LinkType {
   PDF,
   Print,
-  Video,
 }

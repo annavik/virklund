@@ -15,10 +15,10 @@ import { Card } from "./Card/Card";
 import styles from "./PatternsPage.module.scss";
 
 const filterTypes = [
-  { id: "filter-all", label: "Visa alla" },
+  { id: "filter-all", label: "Alla mönster" },
   { id: "filter-pdf", label: "PDF" },
-  { id: "filter-video", label: "YouTube" },
-  { id: "filter-print", label: "Utskrift" },
+  { id: "filter-video", label: "Video" },
+  { id: "filter-beginner", label: "Nybörjarvänligt" },
 ];
 
 const sortTypes = [
@@ -59,8 +59,8 @@ export const PatternsPage = () => {
           return pattern.tags.includes(Tag.PDF);
         case "filter-video":
           return pattern.tags.includes(Tag.Video);
-        case "filter-print":
-          return pattern.tags.includes(Tag.Print);
+        case "filter-beginner":
+          return pattern.tags.includes(Tag.Beginner);
         default:
           return true;
       }
@@ -103,7 +103,7 @@ export const PatternsPage = () => {
         <Spacer size={20} />
         <div style={{ flex: 1 }}>
           <Dropdown
-            label="Sortera efter"
+            label="Sortering"
             items={sortTypes}
             selected={sortType}
             onSelect={setSortType}

@@ -10,7 +10,7 @@ export const tammy: Pattern = {
     objectPosition: "center left",
   },
   date: new Date("2017-10-29"),
-  tags: [Tag.Video],
+  tags: [Tag.Video, Tag.Beginner],
   links: [],
   description:
     "Pannbandet Tammy går att virka med valfritt garn! Använt ett varmt ullgarn och Tammy kommer hålla dina öron varma hela vintern!",
