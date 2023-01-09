@@ -13,7 +13,7 @@ export const lov: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Virkade löv blir fina i påskriset eller som dekoration i hemmet året runt. Bara fantasin sätter gränser!",
   info: {
     hook: "3 mm",
     yarn: "Garn som passar virknål 3, gärna i bomull.",

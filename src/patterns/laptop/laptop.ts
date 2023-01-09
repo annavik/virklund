@@ -24,7 +24,7 @@ export const laptop: Pattern = {
     },
   ],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Imponera på jobbkollegorna med ett hemmagjort fodral till datorn. Men passa sig så att dom inte tvingar dig att virka till hela kontoret...",
   info: {
     hook: "7 mm",
     yarn: "Gärna i två färger (ca 200 g + 50 g), som passar virknål 4-5. Mönstret virkas med dubbelt garn.",

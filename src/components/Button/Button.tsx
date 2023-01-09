@@ -4,11 +4,11 @@ import styles from "./Button.module.scss";
 export const Button = ({
   label,
   theme = "primary",
-  onClick,
+  onClick = () => {},
 }: {
   label: string;
   theme?: "primary" | "secondary";
-  onClick: () => void;
+  onClick?: () => void;
 }) => {
   return (
     <button

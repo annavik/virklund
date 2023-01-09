@@ -13,7 +13,7 @@ export const presentband: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Visa lite extra omtanke med ett hemgjort band på presenten. Använd sedan bandet igen och igen!",
   info: {
     hook: "Valfri (i videon används 3 mm)",
     yarn: "Ett som passar garnet.",

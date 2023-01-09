@@ -13,7 +13,7 @@ export const uggla: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Dom här söta små ugglorna håller koll på ditt hem. Virka en och snart kanske du har en hel familj?",
   info: {
     hook: "3 mm",
     yarn: "Ett som passar virknål 3-4, gärna i 2 färger.",

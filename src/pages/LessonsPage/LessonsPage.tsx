@@ -43,7 +43,7 @@ export const LessonsPage = () => {
             <Spacer size={10} />
             <p>
               Virkskolan är en serie korta videor där fokus ligger på
-              grundläggande tekniker och tips och trix.
+              grundläggande tekniker och tips.
             </p>
           </Bubble>
         </div>

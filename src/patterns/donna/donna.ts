@@ -23,7 +23,7 @@ export const donna: Pattern = {
     },
   ],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Sjalen Donna är mysig att värma sig i under dom kalla månaderna. Den går enkelt att variera storleken på och är ett perfekt mönster för nybörjare.",
   info: {
     hook: "7 mm",
     yarn: "150-200 g av ett garn som passar virknål 4-5.",

@@ -13,7 +13,7 @@ export const tomteluva: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Sprid lite julglädje i din omgivning med en virkad tomteluva. Använder du ett varmt garn går tomteluvan lika bra att använda som en mössa ute.",
   info: {
     hook: "7 mm",
     yarn: "Ett som passar garnet. 50g vitt och 100g rött.",

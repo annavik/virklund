@@ -13,7 +13,7 @@ export const korg: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Finns det något härligare än att servera fika i en egentillverkad korg? Tror inte det!",
   info: {
     hook: "5 mm",
     yarn: "100 g Järbo Soft Cotton (eller liknande). Mönstret virkas med dubbelt garn.",

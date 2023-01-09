@@ -24,7 +24,7 @@ export const ampel: Pattern = {
     },
   ],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Mitt allra första egna mönster! En enkel ampel som blir fin med en krukväxt i och går snabbt att virka.",
   info: {
     hook: "7 mm",
     yarn: "50 g garn som passar virknål 4-5. Mönstret virkas med dubbelt garn.",

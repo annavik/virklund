@@ -13,7 +13,7 @@ export const tammy: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Pannbandet Tammy går att virka med valfritt garn! Använt ett varmt ullgarn och Tammy kommer hålla dina öron varma hela vintern!",
   info: {
     hook: "Valfri (i videon används 7 mm)",
     yarn: "Ett som passar garnet (för mig gick det åt ca 50g)",

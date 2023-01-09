@@ -24,7 +24,7 @@ export const laura: Pattern = {
     },
   ],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Mössan Laura skyddar dig från kyliga vindpustar. Ett perfekt nybörjarprojekt som går snabbt att virka!",
   info: {
     hook: "7 mm",
     yarn: "100 g garn som passar virknål 4-5. Mönstret virkas med dubbelt garn.",

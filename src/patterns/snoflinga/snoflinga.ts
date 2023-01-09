@@ -13,7 +13,7 @@ export const snoflinga: Pattern = {
   tags: [Tag.Video],
   links: [],
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+    "Dom här gulliga snöflingorna passar bra i julgranen eller på julklappen. Ett kul litet julpyssel, gör så många du vil!",
   info: {
     hook: "3 mm",
     yarn: "Ett som passar garnet, bara lite behövs.",

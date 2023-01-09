@@ -25,17 +25,23 @@ export const Home = () => {
       <Intro />
       <Spacer size={100} smallScreenSize={60} />
       <Teaser
-        title="Lorem ipsum dolor sit amet"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        title="Tips och trix i Virkskolan"
+        text="Virkskolan är en serie korta videor där jag visar lite grunder och kommer med tips. Tanken är att klippen ska kunna användas om man snabbt vill ta reda på hur man gör något specifikt under tiden man virkar."
         image={{ src: book, alignment: "left" }}
-        button={{ label: "Lorem ipsum", onClick: () => {} }}
+        button={{
+          label: "Till Virkskolan",
+          onClick: () => navigate("/lessons"),
+        }}
       />
       <Spacer size={50} smallScreenSize={20} />
       <Teaser
-        title="Lorem ipsum dolor sit amet"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        title="En mysig virkstund"
+        text="Gör virkstunden lite extra mysig genom ett levande ljus, en kanna te och kanske en trevlig ljudbok? Jag har även börjat på en liten spellista för virkning, testa den gärna!"
         image={{ src: light, alignment: "right" }}
-        button={{ label: "Lorem ipsum", onClick: () => {} }}
+        link={{
+          label: "Spellista för virkning",
+          href: "https://open.spotify.com/playlist/5zd4IAw6LJKSZw6tEOycgf?si=dfb1ad196b9e4125",
+        }}
       />
       <Spacer size={100} smallScreenSize={60} />
       <SectionTitle
