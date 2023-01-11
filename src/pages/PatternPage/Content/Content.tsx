@@ -3,6 +3,7 @@ import { ArrowButton } from "../../../components/ArrowButton/ArrowButton";
 import { Bubble } from "../../../components/Bubble/Bubble";
 import { MarkdownContent } from "../../../components/MarkdownContent/MarkdownContent";
 import { Spacer } from "../../../components/Spacer/Spacer";
+import { Virklund } from "../../../components/Virklund/Virklund";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import {
   getPatternDateString,
@@ -25,13 +26,13 @@ export const Content = ({ pattern }: { pattern: Pattern }) => {
   }, []);
 
   return (
-    <>
+    <div className={styles.Content}>
       <h1 className={styles.Title}>{pattern.title}</h1>
       <p className={styles.SubTitle}>{date}</p>
       <Spacer size={40} />
       <div>
         <Bubble
-          position={isSmallScreen ? "top" : "right"}
+          position={isSmallScreen ? "bottom" : "right"}
           theme={isSmallScreen ? "white" : "light-blue"}
           style={
             isSmallScreen
@@ -79,7 +80,19 @@ export const Content = ({ pattern }: { pattern: Pattern }) => {
           style={{ maxWidth: "480px" }}
           content={pattern.content ? content : pattern.description}
         />
+        <Spacer size={20} />
+        <div className={styles.BottomContent}>
+          <Bubble
+            theme={isSmallScreen ? "white" : "light-blue"}
+            style={{ padding: "20px" }}
+            position="left"
+          >
+            <p>Lycka till med virkningen!</p>
+          </Bubble>
+          <Spacer size={30} />
+          <Virklund size={60} />
+        </div>
       </div>
-    </>
+    </div>
   );
 };

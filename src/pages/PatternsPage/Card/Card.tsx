@@ -10,6 +10,7 @@ import styles from "./Card.module.scss";
 const DESC_MAX_LENGTH = 150;
 
 export const Card = ({ pattern }: { pattern: Pattern }) => {
+  const src = pattern.image.thumbnail ?? pattern.image.src;
   const date = getPatternDateString(pattern);
   const description =
     pattern.description.length > DESC_MAX_LENGTH
@@ -23,7 +24,7 @@ export const Card = ({ pattern }: { pattern: Pattern }) => {
     <div className={styles.Card}>
       <img
         className={styles.Image}
-        src={pattern.image.src}
+        src={src}
         style={{ objectPosition: pattern.image.objectPosition }}
         alt=""
       />

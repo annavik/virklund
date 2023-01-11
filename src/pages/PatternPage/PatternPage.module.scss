@@ -24,10 +24,6 @@
   object-fit: cover;
 }
 
-.Content {
-  padding: 40px;
-}
-
 @media screen and (max-width: $small-screen-breakpoint) {
   .Container {
     margin: -20px;

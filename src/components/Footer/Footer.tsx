@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div className={styles.Footer}>
       <div className={styles.Content}>
-        <p>Kod och design av Anna Viklund 2022</p>
+        <p>Copyright © Anna Viklund 2023</p>
         <Spacer size={15} />
         <div className={styles.Social}>
           <a

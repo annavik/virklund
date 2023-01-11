@@ -22,7 +22,7 @@ export const Intro = () => {
             skulle göra mig så glad!
           </p>
           <Spacer size={30} />
-          <Button label="Hitta mönster" onClick={() => navigate("/patterns")} />
+          <Button label="Till mönster" onClick={() => navigate("/patterns")} />
         </div>
         <Spacer size={30} smallScreenSize={60} />
         <img className={styles.Image} src={room} alt="" />
