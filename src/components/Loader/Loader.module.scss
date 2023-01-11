@@ -1,0 +1,21 @@
+@import "../../base.scss";
+
+.Loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Image {
+  object-fit: contain;
+  animation: rotation 1.5s infinite ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

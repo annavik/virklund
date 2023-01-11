@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Loader } from "../Loader/Loader";
 import styles from "./VideoPlayer.module.scss";
 
 const RATIO = 16 / 9;
@@ -29,7 +30,7 @@ export const VideoPlayer = ({
     >
       {isLoading && (
         <div className={styles.Loader}>
-          <span>Laddar...</span>
+          <Loader />
         </div>
       )}
       <iframe
