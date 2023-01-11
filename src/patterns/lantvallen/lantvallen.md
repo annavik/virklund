@@ -2,7 +2,7 @@ Välkommen till Lantvallen Väggbonad CAL! CAL står för crochet along och det 
 
 Planen är att under 4 veckor virka en väggbonad och jag kommer släppa en liten del av mönstret varje vecka. Väggbonaden kommer ha lite bohemisk stil och vara ca 20 cm bred och 40 cm hög. Nya avsnitt kommer kl. 19 varje onsdag (uppdatering: nu finns alla avsnitt ute).
 
-## Det som behövs för projektet är:
+## Det som behövs är:
 
 - En virknål i storleken 7 mm.
 - Garn (gärna i 100% ull) som passar virknål 7-8. Jag kommer använda garnet "Snow" från Drops i färgerna Sjögrön, Saphir och Ljusbeige. Totalt kommer vi använda ca 100 g garn.

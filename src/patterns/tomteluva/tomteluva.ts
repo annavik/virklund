@@ -16,7 +16,7 @@ export const tomteluva: Pattern = {
     "Sprid lite julglädje i din omgivning med en virkad tomteluva. Använder du ett varmt garn går tomteluvan lika bra att använda som en mössa ute.",
   info: {
     hook: "7 mm",
-    yarn: "Ett som passar garnet. 50g vitt och 100g rött.",
+    yarn: "Ett som passar nålen. 50g vitt och 100g rött.",
     level: "Enkel",
   },
   video: "https://www.youtube.com/embed/AApm6Vlz1L8",

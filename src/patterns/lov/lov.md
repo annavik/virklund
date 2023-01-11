@@ -1,6 +1,6 @@
 I den här videon virkar jag ett löv. Perfekt till påskriset eller för att piffa till hemmet! Mönstret innehåller en del olika typer av maskor, så det kan det vara bra om du har testat virkning någon gång förut.
 
-## Det som behövs för projektet är:
+## Det som behövs är:
 
 - En virknål i storleken 3 mm.
 - Garn som passar virknål 3, gärna i bomull. I videon använder jag Järbo 8/4 i färgen Pistage ombré (fanns på min matbutik).

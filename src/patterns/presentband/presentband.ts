@@ -16,7 +16,7 @@ export const presentband: Pattern = {
     "Visa lite extra omtanke med ett hemgjort band på presenten. Använd sedan bandet igen och igen!",
   info: {
     hook: "Valfri (i videon används 3 mm)",
-    yarn: "Ett som passar garnet.",
+    yarn: "Ett som passar nålen.",
     level: "Enkel",
   },
   video: "https://www.youtube.com/embed/BHdju0ApshU",

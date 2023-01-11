@@ -1,4 +1,6 @@
-I den här videon virkar jag en liten uggla. Den är enkel att göra, men eftersom mönstret innehåller en del olika steg kan det vara bra om du testat lite virkning förut. Det som behövs för projektet är:
+I den här videon virkar jag en liten uggla. Den är enkel att göra, men eftersom mönstret innehåller en del olika steg kan det vara bra om du testat lite virkning förut.
+
+## Det som behövs är:
 
 - En virknål i storleken 3 mm.
 - Garn som passar virknål 3-4, gärna i bomull. Jag använder det här garnet i videon: https://www.svartafaret.se/shop/garn/...

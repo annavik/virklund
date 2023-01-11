@@ -1,6 +1,6 @@
 I den här videon blir det påskfeeling! Planen är att virka kycklingar. Mönstret innehåller en del olika typer av maskor, så det kan det vara bra om du har testat virkning någon gång förut.
 
-## Det som behövs för projektet är:
+## Det som behövs är:
 
 - En virknål i storleken 3 mm.
 - Garn som passar virknål 3. I videon använder jag Järbos gulliga nystan "Minibomull".
