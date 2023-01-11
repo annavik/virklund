@@ -4,6 +4,7 @@ export interface Pattern {
   description: string;
   image: {
     src: string;
+    thumbnail?: string;
     objectPosition?: string;
   };
   date: Date;

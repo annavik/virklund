@@ -7,6 +7,7 @@ import { laptop } from "./laptop/laptop";
 import { laura } from "./laura/laura";
 import { lov } from "./lov/lov";
 import { presentband } from "./presentband/presentband";
+import { skogsstjarna } from "./skogsstjarna/skogsstjarna";
 import { snoflinga } from "./snoflinga/snoflinga";
 import { tammy } from "./tammy/tammy";
 import { tomteluva } from "./tomteluva/tomteluva";
@@ -27,6 +28,7 @@ export const patterns: Pattern[] = [
   lov,
   kyckling,
   lantvallen,
+  skogsstjarna,
 ];
 
 export const patternTagToString = (tag: Tag): string => {
