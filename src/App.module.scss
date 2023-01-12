@@ -1,8 +1,8 @@
 @import "./base.scss";
 
 .App {
-  height: 100vh;
   height: -webkit-fill-available;
+  height: 100vh;
   min-width: 320px;
   overflow: hidden;
   display: flex;
