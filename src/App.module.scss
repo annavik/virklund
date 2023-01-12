@@ -2,6 +2,7 @@
 
 .App {
   height: 100vh;
+  height: -webkit-fill-available;
   min-width: 320px;
   overflow: hidden;
   display: flex;
