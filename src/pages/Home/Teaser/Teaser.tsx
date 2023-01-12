@@ -7,14 +7,13 @@ export const Teaser = ({
   title,
   text,
   image,
-  link,
+
   button,
 }: {
   title: string;
   text: string;
   image: { src: string; alignment: "left" | "right" };
-  link?: { label: string; href: string };
-  button?: { label: string; onClick: () => void };
+  button: { label: string; onClick: () => void };
 }) => {
   return (
     <div
@@ -29,18 +28,11 @@ export const Teaser = ({
         <Spacer size={20} />
         <p className={styles.Text}>{text}</p>
         <Spacer size={20} smallScreenSize={40} />
-        {link && (
-          <a href={link.href} target="_blank" rel="noreferrer">
-            <Button label={link.label} theme="secondary" />
-          </a>
-        )}
-        {button && (
-          <Button
-            label={button.label}
-            theme="secondary"
-            onClick={button.onClick}
-          />
-        )}
+        <Button
+          label={button.label}
+          theme="secondary"
+          onClick={button.onClick}
+        />
       </div>
     </div>
   );

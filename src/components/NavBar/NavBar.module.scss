@@ -19,6 +19,12 @@
   span {
     @include label();
   }
+
+  &:hover {
+    span {
+      color: $color-grey-dark;
+    }
+  }
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {

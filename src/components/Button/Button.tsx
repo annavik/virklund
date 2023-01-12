@@ -4,7 +4,7 @@ import styles from "./Button.module.scss";
 export const Button = ({
   label,
   theme = "primary",
-  onClick = () => {},
+  onClick,
 }: {
   label: string;
   theme?: "primary" | "secondary";
@@ -12,6 +12,7 @@ export const Button = ({
 }) => {
   return (
     <button
+      tabIndex={onClick ? 0 : -1}
       className={classNames(styles.Button, {
         [styles.Primary]: theme === "primary",
         [styles.Secondary]: theme === "secondary",

@@ -10,6 +10,14 @@
   display: flex;
 }
 
+.CardLink {
+  &:hover {
+    > * {
+      box-shadow: $shadow-hover;
+    }
+  }
+}
+
 @media screen and (max-width: $small-screen-breakpoint) {
   .Controls {
     display: none;

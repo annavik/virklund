@@ -38,3 +38,7 @@ button {
 img {
   vertical-align: middle;
 }
+
+:focus-visible {
+  outline-color: #7a9dea;
+}

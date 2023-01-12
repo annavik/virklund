@@ -17,6 +17,10 @@
 
   a {
     font-weight: 500;
+
+    &:hover {
+      color: $color-grey-dark;
+    }
   }
 
   ul {

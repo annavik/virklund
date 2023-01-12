@@ -117,7 +117,7 @@ export const PatternsPage = () => {
       <Spacer size={40} smallScreenSize={20} />
       {patternList.map((pattern, index) => (
         <React.Fragment key={pattern.id}>
-          <Link to={`/patterns/${pattern.id}`}>
+          <Link to={`/patterns/${pattern.id}`} className={styles.CardLink}>
             <Card pattern={pattern} />
           </Link>
           {index < patternList.length - 1 && (

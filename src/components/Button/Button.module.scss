@@ -7,6 +7,7 @@
   box-sizing: border-box;
   height: 40px;
   padding: 0 40px;
+  border: 2px transparent solid;
   border-radius: 20px;
 
   span {
@@ -15,6 +16,12 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: $color-blue-dark;
+    box-shadow: 0 0 0 1px $color-blue-medium;
   }
 
   &.Primary {
@@ -34,6 +41,10 @@
 
     span {
       color: $color-blue-dark;
+    }
+
+    &:hover {
+      background-color: $color-blue-transparent;
     }
   }
 }

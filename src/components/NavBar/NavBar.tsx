@@ -11,12 +11,10 @@ export const NavBar = () => {
 
   return (
     <div className={styles.NavBar}>
-      <Link to="/">
-        <div className={styles.Logo}>
-          <Virklund size={30} />
-          <Spacer size={10} />
-          <span>Anna Virklund</span>
-        </div>
+      <Link to="/" className={styles.Logo}>
+        <Virklund size={30} />
+        <Spacer size={10} />
+        <span>Anna Virklund</span>
       </Link>
       {isSmallScreen ? <SmallScreenMenu /> : <Menu />}
     </div>

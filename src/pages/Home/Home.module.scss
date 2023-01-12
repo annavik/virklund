@@ -12,6 +12,14 @@
   justify-content: space-between;
 }
 
+.CardLink {
+  &:hover {
+    > * {
+      box-shadow: $shadow-hover;
+    }
+  }
+}
+
 @media screen and (max-width: $small-screen-breakpoint) {
   .LatestPatterns {
     flex-direction: column;

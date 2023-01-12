@@ -38,9 +38,12 @@ export const Home = () => {
         title="En mysig virkstund"
         text="Gör virkstunden lite extra mysig genom ett levande ljus, en kanna te och kanske en trevlig ljudbok? Jag har även börjat på en liten spellista för virkning, testa den gärna!"
         image={{ src: light, alignment: "right" }}
-        link={{
+        button={{
           label: "Spellista för virkning",
-          href: "https://open.spotify.com/playlist/5zd4IAw6LJKSZw6tEOycgf?si=dfb1ad196b9e4125",
+          onClick: () =>
+            window.open(
+              "https://open.spotify.com/playlist/5zd4IAw6LJKSZw6tEOycgf?si=dfb1ad196b9e4125"
+            ),
         }}
       />
       <Spacer size={100} smallScreenSize={60} />
@@ -54,7 +57,11 @@ export const Home = () => {
       <Spacer size={30} smallScreenSize={20} />
       <div className={styles.LatestPatterns}>
         {latestPatterns.map((pattern) => (
-          <Link to={`/patterns/${pattern.id}`} key={pattern.id}>
+          <Link
+            to={`/patterns/${pattern.id}`}
+            key={pattern.id}
+            className={styles.CardLink}
+          >
             <Card pattern={pattern} />
           </Link>
         ))}

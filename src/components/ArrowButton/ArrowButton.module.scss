@@ -13,8 +13,8 @@
   &:hover {
     cursor: pointer;
 
-    .ArrowContainer {
-      background-color: $color-green-dark;
+    span {
+      color: $color-grey-dark;
     }
   }
 

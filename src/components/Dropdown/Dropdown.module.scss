@@ -24,7 +24,7 @@
 
   &.Active {
     border-color: $color-green-medium;
-    outline: $color-green-light solid 1px;
+    box-shadow: 0 0 0 1px $color-green-light;
 
     .Arrow {
       transform: rotate(-180deg);
