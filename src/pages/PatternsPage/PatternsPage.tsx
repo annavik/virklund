@@ -1,5 +1,5 @@
 import Fuse from "fuse.js";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Dropdown } from "../../components/Dropdown/Dropdown";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
@@ -32,20 +32,24 @@ export const PatternsPage = () => {
   const [filterType, setFilterType] = useState(filterTypes[0].id);
   const [sortType, setSortType] = useState(sortTypes[0].id);
 
-  const fuse = new Fuse(patterns, {
-    keys: [
-      {
-        name: "title",
-        weight: 1,
-      },
-      {
-        name: "description",
-        weight: 2,
-      },
-    ],
-    threshold: 0.5,
-    shouldSort: false,
-  });
+  const fuse = useMemo(
+    () =>
+      new Fuse(patterns, {
+        keys: [
+          {
+            name: "title",
+            weight: 1,
+          },
+          {
+            name: "description",
+            weight: 2,
+          },
+        ],
+        threshold: 0.5,
+        shouldSort: false,
+      }),
+    []
+  );
 
   useEffect(() => {
     let _patternList =
@@ -76,7 +80,7 @@ export const PatternsPage = () => {
     }
 
     setPatternList(_patternList);
-  }, [searchString, sortType, filterType]);
+  }, [searchString, sortType, filterType, fuse]);
 
   return (
     <div className={styles.Container}>

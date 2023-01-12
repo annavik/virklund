@@ -23,7 +23,7 @@ export const Content = ({ pattern }: { pattern: Pattern }) => {
         .then((response) => response.text())
         .then((result) => setContent(result));
     }
-  }, []);
+  }, [pattern.content]);
 
   return (
     <div className={styles.Content}>

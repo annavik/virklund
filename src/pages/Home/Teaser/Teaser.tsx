@@ -30,7 +30,7 @@ export const Teaser = ({
         <p className={styles.Text}>{text}</p>
         <Spacer size={20} smallScreenSize={40} />
         {link && (
-          <a href={link.href} target="_blank">
+          <a href={link.href} target="_blank" rel="noreferrer">
             <Button label={link.label} theme="secondary" />
           </a>
         )}
