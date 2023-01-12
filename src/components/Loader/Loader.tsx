@@ -7,8 +7,8 @@ export const Loader = () => {
       <img
         className={styles.Image}
         src={hook}
-        height={120}
-        width={60}
+        height={100}
+        width={100}
         alt="Laddar..."
       ></img>
     </div>

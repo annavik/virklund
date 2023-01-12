@@ -13,13 +13,13 @@ export const Intro = () => {
         <div className={styles.Content}>
           <h1 className={styles.Title}>Välkommen in!</h1>
           <p className={styles.Text}>
-            Vad kul att du har hittat hit! Jag heter Anna och är en 32-årig tjej
-            från Umeå som är lite virktokig. Inte nog med det, jag vill även få
-            andra att virka och det var därför jag började spela in
-            instruktionsvideor för nybörjare för några år sen. På den här sidan
-            har jag samlat mina mönster och videor, hoppas du hittar något du
-            gillar och kanske vågar ta steget att prova virkning du med, det
-            skulle göra mig så glad!
+            Vad kul att du har hittat hit! Jag heter Anna och är en tjej från
+            Umeå som är lite virktokig. Inte nog med det, jag vill även få andra
+            att virka och det var därför jag började spela in instruktionsvideor
+            för nybörjare för några år sen. På den här sidan har jag samlat mina
+            mönster och videor, hoppas du hittar något du gillar och kanske
+            vågar ta steget att prova virkning du med, det skulle göra mig så
+            glad!
           </p>
           <Spacer size={30} />
           <Button label="Till mönster" onClick={() => navigate("/patterns")} />
