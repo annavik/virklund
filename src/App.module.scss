@@ -3,7 +3,7 @@
 .App {
   height: 100vh;
   height: 100dvh;
-  height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
   min-width: 320px;
   overflow: hidden;
   display: flex;
