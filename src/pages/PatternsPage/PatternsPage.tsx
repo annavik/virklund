@@ -90,6 +90,7 @@ export const PatternsPage = () => {
       <div className={styles.Controls}>
         <div style={{ flex: 2 }}>
           <TextInput
+            id="search-input"
             label="Sök"
             value={searchString}
             onChange={setSearchString}
